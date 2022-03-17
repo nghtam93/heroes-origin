@@ -452,7 +452,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: url(../img/leaf.png);
+			background: url(../img/home-earn-leaf.png);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position:top center;
@@ -620,6 +620,20 @@
 		font-size: 18px;
 		line-height: 26px;
 		color: #223973;
+
+		&:before{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url(../img/home-token-pattern.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: bottom center;
+			pointer-events: none;
+		}
 		.el__meta{
 			padding-left: 130px;
 		}
@@ -646,6 +660,19 @@
 	&-team{
 		position: relative;
 		padding: 80px 0;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url(../img/home-team-leaf.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			z-index: -1;
+			pointer-events: none;
+		}
 		.flickity {
 		    --bs-gutter-x: 60px;
 		}
