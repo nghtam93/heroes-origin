@@ -4,6 +4,9 @@
 	color: #fff;
 	font-size: 14px;
 	line-height: 1.5;
+	background-image: url(../img/footer-bg.png);
+	background-repeat: no-repeat;
+	background-size:cover;
 	.container{
 		position: relative;
 	}
@@ -59,12 +62,7 @@
 		padding: 60px 0 16px;
 	}
 	@media (max-width: 767px){
-		.sc__header {
-		    margin-bottom: 10px;
-		}
-		&__item {
-		    margin-bottom: 50px;
-		}
+
 	}
 	@media (max-width: 575px){
 

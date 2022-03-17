@@ -205,7 +205,94 @@ $shadows-big: multiple-box-shadow(100);
             border:2px solid #A8A81C;background-color:#A8A81C;
         }
     }
-
-
 }
 
+/**/
+.nav-custom{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 80px;
+    .nav-link{
+        position: relative;
+        padding: 0.5rem 60px;
+        background-color:transparent;
+        border: 0;
+        font-family: 'Smooch Sans';
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        color: #FFFFFF;
+        background: #0F98E4;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 5px transparent;
+        &.active{
+            &:before{
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 0;
+                right: 0;
+                width: 100%;
+                max-width: 170px;
+                height: 100%;
+                margin: 0 auto;
+                background: url(../img/tab-active.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                pointer-events: none;
+                background-position: bottom;
+                z-index: -1;
+            }
+        }
+    }
+}
+/**/
+ul.ul-type-ninja{
+    li{
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 10px;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 36px;
+            height: 27px;
+            background: url(../img/ic-pepper-small.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+    }
+}
+/**/
+.bg-mask{
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 86px;
+        background: url(../img/home-earn-bg-top.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top left;
+        pointer-events: none;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 86px;
+        background: url(../img/home-earn-bg-bottom.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+        pointer-events: none;
+    }
+}

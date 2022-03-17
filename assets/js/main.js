@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
     // $('body').addClass('modal-open')
-    $(window).on("load", function () {
-      $('.loading-page__logo').fadeOut();
-      $('.loading-page').delay(350).fadeOut('slow');
-      $('body').removeClass('modal-open')
-    })
+    // $(window).on("load", function () {
+    //   $('.loading-page__logo').fadeOut();
+    //   $('.loading-page').delay(350).fadeOut('slow');
+    //   $('body').removeClass('modal-open')
+    // })
 
     // Stick header
     var stick_header = $('.header.-fix')
@@ -105,38 +105,12 @@ $(document).ready(function(){
     $('.menu-mb__btn').dnmenu()
 
     //Home page
-    var $carousel = $('.nav-roadmap')
-    $carousel.on( 'change.flickity', function( event, index ) {
-      console.log( 'Slide changed to ' + index )
-      var index2 = index + 1
-      console.log($('.nav-roadmap li:nth-child('+index2+') .nav-link').html())
-      $('.nav-roadmap li:nth-child('+index2+') .nav-link').click()
-    });
+    $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+      $('.js-flickity').flickity('resize');
+    })
 
     // End home page
 
-
-    // check checkbox checked enable button
-    function checkDisableButton() {
-        $(".js-attr-disable").each(function () {
-          let checkBox = $(this).find(".js-attr-checkbox");
-          let btn = $(this).find(".js-attr-button");
-          checkBox.on("click", function () {
-            console.log(1)
-            if ($(this).is(":checked")) {
-              $(btn).removeAttr("disabled").removeClass("-disabled");
-            } else {
-              $(btn).attr("disabled", "disabled").addClass("-disabled");
-            }
-          });
-        });
-    }
-    checkDisableButton();
-
-    /**/
-    $('.js-tr-toggle').click(function(e){
-        $(this).next().toggle()
-    })
 });
 
 
