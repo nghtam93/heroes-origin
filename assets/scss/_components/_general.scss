@@ -1,0 +1,211 @@
+.sc__header{
+    position:relative;margin:0 0 80px;
+    z-index: 1;
+    &__title{
+        font-family: 'Smooch Sans';
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 80px;
+
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: #FFFFFF;
+
+
+         background: -webkit-linear-gradient(180deg, #E449F1 0%, #0F98E4 51.04%, #E449F1 100%);
+          -webkit-background-clip: text;
+          -webkit-text-stroke: 10px transparent;
+          text-shadow: 0px 4px 2.65079px #02539E;
+    }
+    &__icon{
+        margin-bottom: 24px;
+    }
+    &__excerpt{
+        max-width: 728px;
+        margin: 16px auto 0;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        color: #223973;
+
+    }
+    @media (max-width:1399px){
+
+    }
+    @media (max-width:991px){
+    }
+    @media (max-width:767px){
+    }
+    @media (max-width:575px){
+        margin-bottom: 30px;
+        &__title {
+            font-size: 24px;
+            line-height: 36px;
+            + div{
+                margin-top: 8px;
+            }
+        }
+        &__excerpt{font-size:14px;}
+    }
+}
+
+
+// Effect
+
+@-webkit-keyframes lightAnimation{
+    0%{-webkit-filter:brightness(1);filter:brightness(1)}
+    50%{-webkit-filter:brightness(1.3);filter:brightness(1.3)}
+    to{-webkit-filter:brightness(1);filter:brightness(1)}
+}
+@-webkit-keyframes Mousex{
+    from{-webkit-transform:translate(0,0px);}
+    65%{-webkit-transform:translate(0,10px);}
+    to{-webkit-transform:translate(0,-0px);}
+}
+@-moz-keyframes Mousex{
+    from{-moz-transform:translate(0,0px);}
+    65%{-moz-transform:translate(0,10px);}
+    to{-moz-transform:translate(0,-0px);}
+}
+@-webkit-keyframes Mousex2{
+    from{-webkit-transform:translate(0,0px);}
+    65%{-webkit-transform:translate(0,-10px);}
+    to{-webkit-transform:translate(0,-0px);}
+}
+@-moz-keyframes Mousex2{
+    from{-moz-transform:translate(0,0px);}
+    65%{-moz-transform:translate(0,-10px);}
+    to{-moz-transform:translate(0,-0px);}
+}
+@-webkit-keyframes lightAnimation2{
+    0%{-webkit-filter:brightness(1);filter:brightness(1)}
+    50%{-webkit-filter:brightness(1.15);filter:brightness(1.15)}
+    to{-webkit-filter:brightness(1);filter:brightness(1)}
+}
+@-webkit-keyframes translateY30{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(30px);}
+    100%{transform:translateY(0);}
+}
+@keyframes spinner-rotate{
+    to{transform:rotate(360deg);}
+}
+@keyframes spinner-rotate2{
+    to{transform:rotate(-360deg);}
+}
+
+@keyframes animate{
+    0%{box-shadow:0 0 50px #0F0,inset 0 0 50px #0F0;filter:hue-rotate(0deg);}
+    20%{box-shadow:0 0 40px #0F0,inset 0 0 60px #0F0;}
+    40%{box-shadow:0 0 40px #0F0,inset 0 0 80px #0F0;}
+    60%{box-shadow:0 0 80px #0F0,inset 0 0 80px #0F0;}
+    80%{box-shadow:0 0 100px #0F0,inset 0 0 100px #0F0;}
+    100%{box-shadow:0 0 50px #0F0,inset 0 0 50px #0F0;filter:hue-rotate(360deg);}
+}
+
+.ef--zoomin .dnfix__thumb img{-webkit-transform:scale(1);transform:scale(1);-webkit-transition:.5s ease-in-out;transition:.5s ease-in-out}
+.ef--zoomin:hover .dnfix__thumb img{-webkit-transform:scale(1.1);transform:scale(1.1)}
+.ef--shine .dnfix__thumb{position:relative;display:block;overflow:hidden}
+.ef--shine .dnfix__thumb::before{position:absolute;top:0;left:-75%;z-index:2;display:block;content:'';width:50%;height:100%;background:-webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);background:linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);-webkit-transform:skewX(-25deg);transform:skewX(-25deg)}
+.ef--shine:hover .dnfix__thumb::before{-webkit-animation:shine 1s;animation:shine 1s}
+@-webkit-keyframes shine{
+    100%{left:125%}
+}
+@keyframes shine{
+    100%{left:125%}
+}
+// STAR ANIMATION
+
+@function multiple-box-shadow($n) {
+  $value: "#{random(2500)}px #{random(2500)}px #ecf0ee";
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(2500)}px #{random(2500)}px #ecf0ee";
+  }
+
+  @return unquote($value);
+}
+$shadows-small: multiple-box-shadow(500);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
+.stars{z-index:-1;width:1px;height:1px;background:transparent;box-shadow:$shadows-small;animation:animStar 40s linear infinite;
+    &:after{content:" ";position:absolute;top:0;width:1px;height:1px;background:transparent;box-shadow:$shadows-small;}
+}
+.stars2{z-index:-1;width:2px;height:2px;background:transparent;box-shadow:$shadows-medium;animation:animStar 90s linear infinite;
+    &:after{content:" ";position:absolute;top:0;width:2px;height:2px;background:transparent;box-shadow:$shadows-medium;}
+}
+.stars3{z-index:-1;width:3px;height:3px;background:transparent;box-shadow:$shadows-big;animation:animStar 140s linear infinite;
+    &:after{content:" ";position:absolute;top:0;width:3px;height:3px;background:transparent;box-shadow:$shadows-big;}
+}
+@media (max-width:991px){
+    .stars,.stars2,.stars3{display:none;}
+}
+@keyframes animStar{
+    from{transform:translateY(0px);}
+    to{transform:translateY(-500px);}
+}
+
+/**/
+.checkmark__item{
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgba(249, 247, 247, .4);
+    pointer-events: none;
+    &.-active{
+        color: #fff;
+        pointer-events: initial;
+    }
+    &.-done{
+
+        span{
+            color: rgba(249,247,247,0.4)!important;
+        }
+        input[type=radio]:checked ~ .checkmark:before{
+            border: 2px solid transparent!important;
+            background-color: rgba(249,247,247,0.4)!important;
+        }
+    }
+    li{
+        position: relative;
+    }
+    label{
+        cursor: pointer;
+    }
+    input[type=radio]{display: none;}
+    input[type=radio] + .checkmark{
+        position:absolute;
+        left:0;
+        top: -2px;
+    }
+    input[type=radio] + .checkmark:before{
+        content:"";display:block;width:18px;height:18px;
+        position:absolute;top:1px;z-index:1;
+        border:1.5px solid rgba(249, 247, 247, .4);
+        border-radius:50%;
+    }
+
+    input[type=radio]:checked~.checkmark + span, input[type=radio]:hover~.checkmark + span{color:#A8A81C;}
+    input[type=radio]:checked~.checkmark{
+        &:after{
+            content: "";
+            position: absolute;
+            left: 7px;
+            top: 5px;
+            width: 4px;
+            height: 8px;
+            border: solid #4a2a32;
+            border-width: 0 1px 1px 0;
+            transform: rotate(45deg);
+            z-index: 2;
+        }
+        &:before{
+            border:2px solid #A8A81C;background-color:#A8A81C;
+        }
+    }
+
+
+}
+

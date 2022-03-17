@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Fighting Spirit turbo';
+    src: url('FightingSpiritturbo-BoldItalic.woff2') format('woff2'),
+        url('FightingSpiritturbo-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

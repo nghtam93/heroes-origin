@@ -1,0 +1,58 @@
+.header{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width:100%;
+	z-index: 10;
+	padding: 16px 0;
+	background: transparent;
+	transition: all .5s;
+	&.-fix{
+		position: fixed;
+	}
+	&.is-sticky{
+		top: 0;
+	}
+
+	.logo{
+		margin-right: 22px;
+		transition: opacity .5s;
+		animation: lightAnimation 1.5s ease-in-out infinite;
+		img{
+			width: auto;
+			max-height: 70px;
+			transition: all .5s;
+		}
+	}
+	&__btn{
+		min-width: 180px;
+        background: url(../img/button-pink.png) no-repeat center;
+    	font-size: 20px;
+    	line-height: 24px;
+	}
+
+
+
+	@media (max-width: 1399px){
+
+
+	}
+	@media (max-width: 1299px){
+
+	}
+	@media (max-width: 1199px){
+
+	}
+	@media (max-width: 991px){
+
+	}
+
+	@media (max-width: 575px){
+
+	}
+}
+@keyframes stuckMoveDown{
+    0%{transform:translateY(-100%)}
+    100%{transform:translateY(0)}
+}
