@@ -112,6 +112,7 @@
 			position: relative;
 			padding-top: 266px;
 			margin-bottom: 50px;
+			animation: 1.5s ease-in-out infinite lightAnimation;
 			&::after {
 				content: '';
 				position: absolute;
@@ -133,8 +134,6 @@
 			position: relative;
 			display: flex;
     		align-items: center;
-			text-align: center;
-			margin: 0 auto;
 			font-family: 'Smooch Sans';
 			font-weight: 900;
 			font-size: 14px;
@@ -159,19 +158,32 @@
 
 	&-gameplay{
 		position: relative;
-		padding: 100px 0 90px;
-
+		padding: 60px 0 60px;
+		--flickity-position: calc(70% - 660px);
 		.carousel{
 			margin-bottom: 70px;
 		}
+
+		.flickity-prev-next-button{
+			top: auto;
+			bottom: 75px;
+			transform: translateX(0);
+			&.previous{
+				left: var(--flickity-position);
+			}
+			&.next{
+				right: var(--flickity-position);
+			}
+		}
 		.flickity-page-dots {
+			display: none;
 		    bottom: -20px;
 		}
 
 		.el__item__thumb{
 			margin-bottom: 20px;
 			.dnfix__thumb{
-				padding-top: 130%;
+				padding-top: 133%;
 			}
 		}
 		.el__item__title{
@@ -256,18 +268,19 @@
 
 	&-featured{
 		position: relative;
-		padding: 90px 0;
+		padding: 120px 0 225px;
 
 		&::before {
 			content: '';
 			position: absolute;
-			top: 300px;
+			top: 400px;
 			left: 0;
 			width: 100%;
 			height: 100%;
 			background: url(../img/bg.png);
 			background-repeat: no-repeat;
 			background-size: cover;
+			background-position: bottom center;
 			z-index: -1;
 			pointer-events: none;
 		}
@@ -326,19 +339,34 @@
 	&-experience{
 		position: relative;
 		padding: 0 0 200px;
-
 		&::before {
 			content: '';
 			position: absolute;
-			top: 0;
+			top: 10px;
 			left: 0;
 			width: 100%;
-			height: 100%;
-			background: url(../img/home-experience-header.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-			z-index: -1;
+			height: 48%;
+			background: linear-gradient(180deg, rgba(205,249,255,0) 0%, #CDF9FF 50.52%, rgba(205,249,255,0) 100%);
 			pointer-events: none;
+		}
+
+		.sc__header{
+			margin-bottom: 30px;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 80px;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: url(../img/home-experience-header.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center right;
+				z-index: -1;
+				pointer-events: none;
+			}
+
 		}
 		&__bg{
 			content: '';
@@ -346,9 +374,10 @@
 			top: 300px;
 			left: 0;
 			width: 100%;
-			height: calc(100% - 200px);
-			background: #89E6F1;
-			z-index: -2;
+			height: 80%;
+			background: url(../img/home-experience-bg.png) no-repeat center;
+			background-size: cover;
+			z-index: -1;
 			pointer-events: none;
 			&::before {
 				content: '';
@@ -381,6 +410,7 @@
 			background: url(../img/home-experience-video.png);
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
+			z-index: 1;
 			&::before {
 				content: '';
 				position: absolute;
@@ -417,7 +447,7 @@
 
 	&-nft{
 		position: relative;
-		padding: 90px 0;
+		padding: 160px 0 90px;
 		.flickity{
 			--bs-gutter-x: 60px;
 		}
@@ -441,7 +471,7 @@
 
 	&-earn{
 		position: relative;
-		padding: 90px 0 340px;
+		padding: 180px 0 340px;
 		background: url(../img/home-earn-bg.png);
 		background-repeat: no-repeat;
 		background-size:cover;
@@ -462,6 +492,7 @@
 			margin-bottom: 40px;
 		}
 		.el__box{
+			min-height: 223px;
 			position: relative;
 			font-family: 'Roboto';
 			font-weight: 700;
@@ -497,7 +528,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			height: calc(100% - 43px);
 			z-index: 1;
 			pointer-events: none;
 			&::before {
@@ -610,7 +641,7 @@
 
 	&-tokenmoics{
 		position: relative;
-		padding: 90px 0 275px;
+		padding: 190px 0 300px;
 		background-image: url(../img/home-token-bg.png);
 		background-repeat: no-repeat;
 		background-size:cover;
@@ -701,8 +732,9 @@
 	}
 	&-advisors{
 		position: relative;
-		padding: 80px 0;
-		background: #89E6F1;
+		padding: 150px 0 200px;
+		background: url(../img/home-advisor-bg.png) no-repeat center;
+		background-size: cover;
 		.el__item{
 			text-align: center;
 			&__thumb{
@@ -729,7 +761,7 @@
 
 	&-partners{
 		position: relative;
-		padding: 90px 0;
+		padding: 40px 0 90px ;
 
 		.el__item{
 			display: block;
@@ -742,10 +774,25 @@
 
 	&-roadmap{
 		position: relative;
-		padding: 90px 0;
+		padding: 90px 0 170px;
+		background: url(../img/home-roadmap-bg.png) no-repeat center;
+		background-size: cover;
+		.flickity-page-dots{
+			display: none;
+		}
 		.el__item{
+			padding: 0 15px;
 			&__thumb{
-
+				position: relative;
+				&::before {
+					content: '';
+					position: absolute;
+					top: 85px;
+					left: -30px;
+    				width: calc(100% + 30px);
+					height: 1px;
+					background: #135A63;
+				}
 			}
 			.dnfix__thumb{
 				width: 108px;
@@ -769,6 +816,11 @@
 				color: #223973;
 			}
 		}
+	}
+
+	&-records{
+		position: relative;
+		padding: 90px 0;
 	}
 
 }

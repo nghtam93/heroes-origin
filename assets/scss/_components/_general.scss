@@ -1,5 +1,5 @@
 .sc__header{
-    position:relative;margin:0 0 80px;
+    position:relative;margin:0 0 60px;
     z-index: 1;
     &__title{
         font-family: 'Smooch Sans';
@@ -20,6 +20,7 @@
     }
     &__icon{
         margin-bottom: 24px;
+        animation: 1.5s ease-in-out infinite lightAnimation;
     }
     &__excerpt{
         max-width: 728px;
@@ -147,67 +148,6 @@ $shadows-big: multiple-box-shadow(100);
 }
 
 /**/
-.checkmark__item{
-    position: relative;
-    padding-left: 25px;
-    cursor: pointer;
-    font-size: 18px;
-    color: rgba(249, 247, 247, .4);
-    pointer-events: none;
-    &.-active{
-        color: #fff;
-        pointer-events: initial;
-    }
-    &.-done{
-
-        span{
-            color: rgba(249,247,247,0.4)!important;
-        }
-        input[type=radio]:checked ~ .checkmark:before{
-            border: 2px solid transparent!important;
-            background-color: rgba(249,247,247,0.4)!important;
-        }
-    }
-    li{
-        position: relative;
-    }
-    label{
-        cursor: pointer;
-    }
-    input[type=radio]{display: none;}
-    input[type=radio] + .checkmark{
-        position:absolute;
-        left:0;
-        top: -2px;
-    }
-    input[type=radio] + .checkmark:before{
-        content:"";display:block;width:18px;height:18px;
-        position:absolute;top:1px;z-index:1;
-        border:1.5px solid rgba(249, 247, 247, .4);
-        border-radius:50%;
-    }
-
-    input[type=radio]:checked~.checkmark + span, input[type=radio]:hover~.checkmark + span{color:#A8A81C;}
-    input[type=radio]:checked~.checkmark{
-        &:after{
-            content: "";
-            position: absolute;
-            left: 7px;
-            top: 5px;
-            width: 4px;
-            height: 8px;
-            border: solid #4a2a32;
-            border-width: 0 1px 1px 0;
-            transform: rotate(45deg);
-            z-index: 2;
-        }
-        &:before{
-            border:2px solid #A8A81C;background-color:#A8A81C;
-        }
-    }
-}
-
-/**/
 .nav-custom{
     position: relative;
     z-index: 1;
@@ -278,7 +218,7 @@ ul.ul-type-ninja{
         height: 86px;
         background: url(../img/home-earn-bg-top.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: top left;
         pointer-events: none;
     }
@@ -291,7 +231,7 @@ ul.ul-type-ninja{
         height: 86px;
         background: url(../img/home-earn-bg-bottom.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: bottom right;
         pointer-events: none;
     }

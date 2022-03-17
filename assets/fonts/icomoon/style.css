@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?hkyzd9');
-  src:  url('fonts/icomoon.eot?hkyzd9#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?hkyzd9') format('truetype'),
-    url('fonts/icomoon.woff?hkyzd9') format('woff'),
-    url('fonts/icomoon.svg?hkyzd9#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?wgwk5q');
+  src:  url('fonts/icomoon.eot?wgwk5q#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?wgwk5q') format('truetype'),
+    url('fonts/icomoon.woff?wgwk5q') format('woff'),
+    url('fonts/icomoon.svg?wgwk5q#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,19 +25,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-discord:before {
+.icon-facebook-circle:before {
   content: "\e900";
 }
-.icon-githab:before {
+.icon-medium-circle:before {
   content: "\e901";
 }
-.icon-medium:before {
+.icon-telegram-circle:before {
   content: "\e902";
 }
-.icon-telegram:before {
+.icon-twitter-circle:before {
   content: "\e903";
 }
-.icon-youtube:before {
+.icon-youtube-circle:before {
   content: "\e904";
 }
 .icon-close:before {
