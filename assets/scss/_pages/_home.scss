@@ -1181,7 +1181,7 @@
 			    line-height: 24px;
 			}
 		}
-		.home-experience{
+		&-experience{
 			.el__video{
 				width: 100%;
 				padding: 16px 12px;
@@ -1239,10 +1239,17 @@
 			    --bs-gutter-x: 30px;
 			}
 		}
+		&-tokenmoics {
+		    font-size: 14px;
+		    line-height: 24px;
+		    ul li {
+			    margin-bottom: 12px;
+			}
+		}
 		&-advisors {
 		    padding: 100px 0;
 		}
-		.home-roadmap {
+		&-roadmap {
 		    padding: 120px 0 150px;
 		}
 		&-partners {
