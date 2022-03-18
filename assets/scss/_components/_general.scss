@@ -54,17 +54,27 @@
     @media (max-width:991px){
     }
     @media (max-width:767px){
+        &__icon img {
+            max-width: 15%;
+        }
     }
     @media (max-width:575px){
         margin-bottom: 30px;
-        &__title {
-            font-size: 24px;
-            line-height: 36px;
-            + div{
-                margin-top: 8px;
+        &__icon{
+            margin-bottom: 12px;
+             img {
+                max-width: 30%;
             }
         }
-        &__excerpt{font-size:14px;}
+
+        &__title {
+            font-size: 28px;
+            line-height: 36px;
+        }
+        &__excerpt{
+            font-size:14px;
+            line-height: 22px;
+        }
     }
 }
 
@@ -213,6 +223,20 @@ $shadows-big: multiple-box-shadow(100);
             padding: 0.5rem 40px;
             font-size: 36px;
             line-height: 48px;
+        }
+    }
+    @media (max-width: 767px) {
+        .nav-link {
+            padding: 0.5rem 30px;
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+    @media (max-width: 575px) {
+        .nav-link {
+            padding: 0.5rem 16px;
+            font-size: 26px;
+            line-height: 30px;
         }
     }
 }

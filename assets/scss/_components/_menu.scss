@@ -5,8 +5,6 @@
 */
 $font-color: #fff;
 
-
-
 .main__nav{
     position:relative;
     max-width: 1400px;
@@ -161,7 +159,7 @@ $font-color: #fff;
     right:-420px;
     width:400px;
     opacity:0;
-    background:#22171B;
+    background:#CDF9FF;
     transition:all .25s;
     z-index:999;
     font-size: 18px;
@@ -175,6 +173,7 @@ $font-color: #fff;
         font-size: 18px;
         z-index: 2;
         cursor: pointer;
+        color: #223973;
     }
     &__header{
         display: flex;
@@ -205,7 +204,7 @@ $font-color: #fff;
             a{
                 display: block;
                 position: relative;
-                color: #fff;
+                color: #223973;
                 padding: 12px 24px;
                 transition: all .5s;
                 &:hover{

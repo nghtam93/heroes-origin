@@ -20,7 +20,7 @@
 			    top: 80%;
 			    left: 0;
 			    width: 14%;
-			    height: 630px;
+			    height: 61%;
 			    background: url(../img/tree-left.png);
 			    background-repeat: no-repeat;
 			    background-size: contain;
@@ -35,7 +35,7 @@
 			    top: 80%;
 			    right: 0;
 			    width: 13%;
-			    height: 630px;
+			    height: 61%;
 			    background: url(../img/tree-right.png);
 			    background-repeat: no-repeat;
 			    background-size: contain;
@@ -1068,6 +1068,11 @@
 			    width: 70%;
 			    height: 70%;
 			}
+			&__leaf{
+				&:before, &:after {
+				    width: 25%;
+				}
+			}
 		}
 		&-gameplay {
 		    padding: 60px 0;
@@ -1084,11 +1089,150 @@
 		}
 		&-activities {
 		    padding: 40px 0 20px;
+		    .el__item__title {
+			    font-size: 28px;
+			    line-height: 32px;
+			}
+		}
+		&-experience{
+			.el__video {
+			    padding: 24px;
+			}
 		}
 		&-tokenmoics{
 			.el__meta {
 			    padding-left: 40px;
 			}
+		}
+		&-roadmap{
+			.flickity-page-dots {
+			    display: block;
+			}
+			.el__item__title {
+			    font-size: 28px;
+			    line-height: 32px;
+			}
+		}
+		&-records{
+			.el__text {
+			    font-size: 28px;
+			    line-height: 32px;
+			    margin-bottom: 50px;
+			}
+			.el__title {
+    			font-size: 28px;
+			    line-height: 32px;
+			}
+		}
+	}
+
+	@media (max-width:767px){
+		&-earn{
+			.el__box {
+			    font-size: 16px;
+			    padding: 40px 50px 24px;
+			    max-width: 90%;
+			    margin: auto;
+			}
+		}
+		&-roadmap{
+			.el__item {
+			    max-width: 300px;
+			    margin: auto;
+			}
+		}
+		&-experience{
+			.el__video {
+			    max-width: 90%;
+			}
+		}
+		&-records{
+			.el__box::after {
+			    display: none;
+			}
+			.el__box>.row:not(:last-child) {
+			    margin-bottom: 50px;
+			}
+		}
+	}
+	@media (max-width:575px){
+		&-header{
+			.el__logo__text {
+			    padding-top: 100px;
+			    max-width: 90%;
+			    margin: 0 auto 30px;
+			}
+		}
+		&-tokenmoics {
+		    padding: 120px 0 80px;
+		}
+		&-gameplay{
+			padding: 60px 0 20px;
+			.el__item__title {
+			    font-size: 18px;
+			    line-height: 24px;
+			}
+			.el__box {
+			    padding: 0 30px 30px;
+			}
+			.el__box__excerpt {
+			    font-size: 14px;
+			    line-height: 24px;
+			}
+		}
+
+		&-featured{
+    		padding: 40px 0;
+
+			&::before {
+				top: 320px;
+			    background-position: 20% 0;
+			}
+
+			.el__box__title {
+			    font-size: 38px;
+			    line-height: 44px;
+			}
+			.el__box {
+			    font-size: 14px;
+			    line-height: 22px;
+			}
+		}
+		&-nft{
+			overflow: hidden;
+			.flickity {
+			  --bs-gutter-x: 20px;
+			}
+			.el__item {
+			    max-width: 200px;
+			    margin: auto;
+			}
+		}
+		&-earn{
+			.el__box {
+			    font-size: 14px;
+			    padding: 24px 16px 16px;
+			    max-width: 100%;
+			}
+			.el__box:before {
+			    transform: skewX(0);
+			}
+		}
+		&-team {
+		    padding: 20px 0 20px;
+		    overflow: hidden;
+		    .flickity {
+			    --bs-gutter-x: 30px;
+			}
+		}
+		&-advisors {
+		    padding: 100px 0;
+		}
+		.home-roadmap {
+		    padding: 120px 0 150px;
+		}
+		&-partners {
+		    padding: 20px 0 0px;
 		}
 	}
 }
