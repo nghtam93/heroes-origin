@@ -1157,6 +1157,7 @@
 	}
 	@media (max-width:575px){
 		&-header{
+    		min-height: 600px;
 			.el__logo__text {
 			    padding-top: 100px;
 			    max-width: 90%;
@@ -1180,7 +1181,15 @@
 			    line-height: 24px;
 			}
 		}
-
+		.home-experience{
+			.el__video{
+				width: 100%;
+				padding: 16px 12px;
+				&::before, &::after{
+					display: none;
+				}
+			}
+		}
 		&-featured{
     		padding: 40px 0;
 
@@ -1209,11 +1218,16 @@
 			}
 		}
 		&-earn{
+			.el__text {
+			    margin-bottom: 30px;
+			    font-size: 14px;
+			}
 			.el__box {
 			    font-size: 14px;
 			    padding: 24px 16px 16px;
 			    max-width: 100%;
 			}
+
 			.el__box:before {
 			    transform: skewX(0);
 			}
