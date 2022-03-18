@@ -13,10 +13,11 @@
 		    background: linear-gradient(180deg, rgba(77,236,254,0) 0%, #4DECFE 50.52%, rgba(77,236,254,0) 100%);
 		}
 		&__leaf{
+
 			&:before{
 				content: '';
 			    position: absolute;
-			    top: 100%;
+			    top: 80%;
 			    left: 0;
 			    width: 14%;
 			    height: 630px;
@@ -25,11 +26,13 @@
 			    background-size: contain;
 			    background-position: top left;
 			    pointer-events: none;
+			    z-index: 1;
+			    animation: 5s ease-in-out infinite Mousex, 5s ease-in-out infinite lightAnimation;
 			}
 			&:after{
 				content: '';
 			    position: absolute;
-			    top: 100%;
+			    top: 80%;
 			    right: 0;
 			    width: 13%;
 			    height: 630px;
@@ -38,9 +41,12 @@
 			    background-size: contain;
 			    background-position: top right;
 			    pointer-events: none;
+			    z-index: 1;
+			    animation: 5s ease-in-out infinite Mousex2, 5s ease-in-out infinite lightAnimation;
 			}
 		}
 		&__bg{
+
 			&:before{
 				content: '';
 				position: absolute;
@@ -160,6 +166,10 @@
 		position: relative;
 		padding: 60px 0 60px;
 		--flickity-position: calc(70% - 660px);
+
+		.sc__header{
+			margin-bottom: 40px;
+		}
 		.carousel{
 			margin-bottom: 70px;
 		}
@@ -273,7 +283,7 @@
 		&::before {
 			content: '';
 			position: absolute;
-			top: 400px;
+			top: 360px;
 			left: 0;
 			width: 100%;
 			height: 100%;
@@ -304,7 +314,7 @@
 			ul{
 				li{
 					position: relative;
-					padding-left: 40px;
+					padding-left: 50px;
 					margin-bottom: 10px;
 					&:before{
 						content: '';
@@ -338,11 +348,11 @@
 
 	&-experience{
 		position: relative;
-		padding: 0 0 200px;
+		padding: 0 0 120px;
 		&::before {
 			content: '';
 			position: absolute;
-			top: 10px;
+			top: 30px;
 			left: 0;
 			width: 100%;
 			height: 48%;
@@ -385,7 +395,7 @@
 				top: -12px;
 				left: 0;
 				width: 100%;
-				height: 107px;
+				height: 86px;
 				background: url(../img/experience-top.png);
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -397,7 +407,7 @@
 				bottom: -12px;
 				left: 0;
 				width: 100%;
-				height: 107px;
+				height: 86px;
 				background: url(../img/experience-bottom.png);
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -447,9 +457,17 @@
 
 	&-nft{
 		position: relative;
-		padding: 160px 0 90px;
+		padding: 180px 0 90px;
 		.flickity{
 			--bs-gutter-x: 60px;
+		}
+		.flickity-prev-next-button{
+			&.previous {
+			    left: -50px;
+			}
+			&.next {
+			    right: -50px;
+			}
 		}
 		.el__item{
 			text-align: center;
@@ -467,6 +485,7 @@
 				color: #223973;
 			}
 		}
+
 	}
 
 	&-earn{
@@ -487,6 +506,10 @@
 			background-size: cover;
 			background-position:top center;
 			pointer-events: none;
+		}
+		.container{
+			position: relative;
+			z-index: 2;
 		}
 		.el__text{
 			margin-bottom: 40px;
@@ -561,8 +584,8 @@
 					position: absolute;
 					bottom: 0;
 					left: 20%;
-					width: 178px;
-					height: 154px;
+					width: 9%;
+					height: 13%;
 					background: url(../img/home-earn-pet-left.png);
 					background-repeat: no-repeat;
 					background-size: contain;
@@ -573,8 +596,8 @@
 					position: absolute;
 					bottom: 0;
 					right: 20%;
-					width: 152px;
-					height: 170px;
+					width: 9%;
+					height: 14%;
 					background: url(../img/home-earn-pet-right.png);
 					background-repeat: no-repeat;
 					background-size: contain;
@@ -586,7 +609,7 @@
 
 	&-activities{
 		position: relative;
-		padding: 60px 0 160px;
+		padding: 60px 0 50px;
 
 		.el__item{
 			text-align: center;
@@ -641,7 +664,7 @@
 
 	&-tokenmoics{
 		position: relative;
-		padding: 190px 0 300px;
+		padding: 190px 0 260px;
 		background-image: url(../img/home-token-bg.png);
 		background-repeat: no-repeat;
 		background-size:cover;
@@ -690,7 +713,7 @@
 
 	&-team{
 		position: relative;
-		padding: 80px 0;
+		padding: 50px 0;
 		&:before{
 			content: '';
 			position: absolute;
@@ -761,7 +784,7 @@
 
 	&-partners{
 		position: relative;
-		padding: 40px 0 90px ;
+		padding: 40px 0 50px ;
 
 		.el__item{
 			display: block;
@@ -774,7 +797,7 @@
 
 	&-roadmap{
 		position: relative;
-		padding: 90px 0 170px;
+		padding: 160px 0 170px;
 		background: url(../img/home-roadmap-bg.png) no-repeat center;
 		background-size: cover;
 		.flickity-page-dots{
@@ -789,7 +812,7 @@
 					position: absolute;
 					top: 85px;
 					left: -30px;
-    				width: calc(100% + 30px);
+    				width: calc(100% + 60px);
 					height: 1px;
 					background: #135A63;
 				}
@@ -820,7 +843,252 @@
 
 	&-records{
 		position: relative;
-		padding: 90px 0;
+		padding: 40px 0 50px;
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+		color: #223973;
+
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url(../img/home-record-bg.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center top;
+			z-index: -1;
+			pointer-events: none;
+		}
+		.el__text{
+			font-family: 'Smooch Sans';
+			font-weight: 900;
+			font-size: 48px;
+			line-height: 58px;
+			color: #F14CBA;
+			text-align: center;
+			margin-bottom: 100px;
+		}
+		.el__box{
+			position: relative;
+			&::after {
+		    	content: '';
+		    	position: absolute;
+		    	top: 0;
+		    	right: -15%;
+		    	width: 58%;
+				height: 72%;
+		    	margin: 0 auto;
+		    	background: url(../img/island2.png);
+		    	background-repeat: no-repeat;
+		    	background-size: contain;
+		    	background-position: center;
+		    	pointer-events: none;
+		    	animation: 5s ease-in-out infinite Mousex;
+		    }
+		    img{
+		    	animation: 1.5s ease-in-out infinite lightAnimation2;
+		    }
+			&>.row{
+				&:not(:last-child){
+					margin-bottom: 80px;
+				}
+			}
+			ul{
+				list-style: disc;
+				padding-left: 16px;
+				li{
+					margin-bottom: 5px;
+				}
+			}
+		}
+		.el__title{
+			font-family: 'Smooch Sans';
+			font-weight: 900;
+			font-size: 38px;
+			line-height: 46px;
+			color: #FFFFFF;
+			text-shadow: -2px -2px 0 #02539E, 2px -2px 0 #02539E, -2px 2px 0 #02539E, 2px 2px 0 #02539E;
+			margin-bottom: 24px;
+		}
+
+
 	}
 
+	@media (max-width:1599px){
+		&-header{
+			.el__logo__text {
+				padding-top: 200px;
+			    max-width: 70%;
+			    margin: 0 auto 50px;
+			}
+		}
+		&-experience{
+  			padding: 0 0 90px;
+  			&::before {
+			    top: 60px;
+			}
+
+			.el__video{
+				&::before {
+				  left: -13%;
+				  width: 18%;
+				}
+				&::after {
+				  right: -11%;
+				  width: 18%;
+				}
+			}
+		}
+		&-featured {
+		  padding: 90px 0 160px;
+		}
+		&-activities {
+		  padding: 60px 0 50px;
+		}
+		&-records{
+			.el__box::after {
+			    right: -10%;
+			    width: 50%;
+			}
+		}
+
+		&-experience{
+			.el__video {
+			    max-width: 80%;
+			    margin: auto;
+			}
+		}
+	}
+
+	@media (max-width:1399px){
+		&-experience {
+		    padding: 0 0 50px;
+		    &::before {
+			    top: 80px;
+			}
+		}
+		&-records{
+			.el__box::after {
+			    right: 0;
+			    width: 50%;
+			}
+		}
+		&-nft {
+		    padding: 180px 0 50px;
+		}
+		&-earn {
+		    padding: 180px 0 200px;
+		}
+		&-tokenmoics{
+			.el__meta {
+			    padding-left: 80px;
+			}
+		}
+		&-activities{
+			.el__item__title {
+			    font-size: 32px;
+			    line-height: 38px;
+			}
+		}
+		&-roadmap{
+			.el__item__title {
+			    font-size: 32px;
+			    line-height: 38px;
+			}
+		}
+		&-records{
+			.el__text {
+			    font-size: 38px;
+			    line-height: 44px;
+			    margin-bottom: 80px;
+			}
+			.el__title {
+			    font-size: 32px;
+			    line-height: 38px;
+			}
+		}
+	}
+
+	@media (max-width:1199px){
+		&-featured {
+		    padding: 60px 0;
+		}
+		&-nft{
+			padding: 60px 0 50px;
+			.flickity-prev-next-button{
+				&.previous {
+				    left: 10px;
+				}
+				&.next {
+				    right: 10px;
+				}
+			}
+		}
+		&-experience{
+			&::before {
+			    top: 0;
+			}
+			&__bg {
+			    top: 200px;
+			    height: calc( 80% - 200px);
+			}
+		}
+		&-earn{
+    		padding: 140px 0 160px;
+			.el__box{
+				min-height: 234px;
+			}
+		}
+		&-tokenmoics {
+		    padding: 140px 0 160px;
+		}
+		&-team {
+		    padding: 20px 0 50px;
+		}
+		&-advisors {
+		    padding: 140px 0 160px;
+		}
+		&-partners {
+		    padding: 40px 0 0px;
+		}
+		&-roadmap {
+		    padding: 140px 0 160px;
+		}
+	}
+
+	@media (max-width:991px){
+		&-header{
+			min-height: 700px;
+			.el__logo__text::after {
+			    width: 70%;
+			    height: 70%;
+			}
+		}
+		&-gameplay {
+		    padding: 60px 0;
+		    --flickity-position: 10px;
+		    .el__item__thumb {
+			    margin-bottom: 10px;
+			}
+		}
+		&-earn{
+			.el__box {
+			    font-size: 16px;
+			    padding: 40px 100px 24px;
+			}
+		}
+		&-activities {
+		    padding: 40px 0 20px;
+		}
+		&-tokenmoics{
+			.el__meta {
+			    padding-left: 40px;
+			}
+		}
+	}
 }
