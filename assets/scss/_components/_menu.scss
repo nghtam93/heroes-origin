@@ -24,7 +24,7 @@ $font-color: #fff;
     }
     a{
         color: $font-color;
-        transition: color 0.3s;
+        transition: text-shadow 0.3s;
         text-shadow: 2px 2px 0 #395aa5, 2px -2px 0 #395aa5, -2px -2px 0 #395aa5, -2px 2px 0 #395aa5, 2px 1px 0 #395aa5, 2px -1px 0 #395aa5, -2px -1px 0 #395aa5, -2px 1px 0 #395aa5, 2px 0px 0 #395aa5, 2px 0px 0 #395aa5, -2px 0px 0 #395aa5, -2px 0px 0 #395aa5, 1px 2px 0 #395aa5, 1px -2px 0 #395aa5, -1px -2px 0 #395aa5, -1px 2px 0 #395aa5, 1px 1px 0 #395aa5, 1px -1px 0 #395aa5, -1px -1px 0 #395aa5, -1px 1px 0 #395aa5, 1px 0px 0 #395aa5, 1px 0px 0 #395aa5, -1px 0px 0 #395aa5, -1px 0px 0 #395aa5, 0px 2px 0 #395aa5, 0px -2px 0 #395aa5, 0px -2px 0 #395aa5, 0px 2px 0 #395aa5, 0px 1px 0 #395aa5, 0px -1px 0 #395aa5, 0px -1px 0 #395aa5, 0px 1px 0 #395aa5, 0px 0px 0 #395aa5, 0px 0px 0 #395aa5, 0px 0px 0 #395aa5, 0px 0px 0 #395aa5, 0 0 0 #395aa5;
     }
     .el__menu{
@@ -91,7 +91,8 @@ $font-color: #fff;
             color:#E09B0F;
         }
         &>li:hover a{
-            color: rgba(255, 255, 255, .5);
+            // color: rgba(255, 255, 255, .5);
+            text-shadow: 2px 2px 0 #f7345b, 2px -2px 0 #f7345b, -2px -2px 0 #f7345b, -2px 2px 0 #f7345b, 2px 1px 0 #f7345b, 2px -1px 0 #f7345b, -2px -1px 0 #f7345b, -2px 1px 0 #f7345b, 2px 0px 0 #f7345b, 2px 0px 0 #f7345b, -2px 0px 0 #f7345b, -2px 0px 0 #f7345b, 1px 2px 0 #f7345b, 1px -2px 0 #f7345b, -1px -2px 0 #f7345b, -1px 2px 0 #f7345b, 1px 1px 0 #f7345b, 1px -1px 0 #f7345b, -1px -1px 0 #f7345b, -1px 1px 0 #f7345b, 1px 0px 0 #f7345b, 1px 0px 0 #f7345b, -1px 0px 0 #f7345b, -1px 0px 0 #f7345b, 0px 2px 0 #f7345b, 0px -2px 0 #f7345b, 0px -2px 0 #f7345b, 0px 2px 0 #f7345b, 0px 1px 0 #f7345b, 0px -1px 0 #f7345b, 0px -1px 0 #f7345b, 0px 1px 0 #f7345b, 0px 0px 0 #f7345b, 0px 0px 0 #f7345b, 0px 0px 0 #f7345b, 0px 0px 0 #f7345b, 0 0 0 #f7345b;
         }
         &>li:hover>a:before, &>li.active>a:before, .current_page_parent>a:before, .current-menu-parent>a:before, .current-menu-item>a:before, .current_page_item>a:before{
             // width:100%;
@@ -288,7 +289,7 @@ $font-color: #fff;
 }
 
 
-@media (max-width: 991px){
+@media (max-width: 1199px){
     .menu-mb__btn{
         display: block;
     }

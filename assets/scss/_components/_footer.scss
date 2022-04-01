@@ -33,6 +33,10 @@
 			color: #FFECA7;
 		}
 	}
+	&__logo{
+		display: block;
+		animation: 2s ease-in-out infinite lightAnimation2;
+	}
 	&__item{
 		position: relative;
 		display: block;
@@ -41,7 +45,7 @@
 	&__title{
 		font-weight: 400;
 		font-size: 18px;
-		line-height: 32px;
+		line-height: 24px;
 		color: #FFFFFF;
 		margin-bottom: 18px;
 	}
@@ -75,11 +79,9 @@
 
 	}
 	@media (max-width: 991px){
-		padding: 120px 0 30px;
-		&__title {
-		    font-size: 22px;
-		    line-height: 28px;
-		    margin-bottom: 18px;
+		padding: 220px 0 30px;
+		&__logo{
+			margin-bottom: 50px;
 		}
 	}
 	@media (max-width: 767px){
@@ -99,6 +101,7 @@
 		    background-size: contain;
 		    background-position: center;
 		    pointer-events: none;
+		    animation: 3s ease-in-out infinite Mousex;
 	    }
 	    &__socical {
 		    justify-content: center;

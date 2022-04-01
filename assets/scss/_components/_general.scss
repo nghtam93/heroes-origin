@@ -33,11 +33,21 @@
         line-height: 32px;
         color: #223973;
     }
-    @media (max-width:1399px){
-
+    @media (max-width:1599px){
+        &__title {
+            font-size: 48px;
+            line-height: 58px;
+            &.-large {
+                font-size: 62px;
+                line-height: 72px;
+            }
+        }
     }
     @media (max-width:1199px){
-
+        &__title.-large {
+            font-size: 48px;
+            line-height: 60px;
+        }
     }
     @media (max-width:991px){
     }
@@ -88,6 +98,16 @@
 @-moz-keyframes Mousex2{
     from{-moz-transform:translate(0,0px);}
     65%{-moz-transform:translate(0,-10px);}
+    to{-moz-transform:translate(0,-0px);}
+}
+@-webkit-keyframes Mousex3{
+    from{-webkit-transform:translate(0,0px);}
+    65%{-webkit-transform:translate(0,-5px);}
+    to{-webkit-transform:translate(0,-0px);}
+}
+@-moz-keyframes Mousex3{
+    from{-moz-transform:translate(0,0px);}
+    65%{-moz-transform:translate(0,-5px);}
     to{-moz-transform:translate(0,-0px);}
 }
 @-webkit-keyframes lightAnimation2{
@@ -223,7 +243,7 @@ $shadows-big: multiple-box-shadow(100);
 ul.ul-type-ninja{
     li{
         position: relative;
-        padding-left: 33px;
+        padding-left: 30px;
         margin-bottom: 10px;
 
         &:before{
