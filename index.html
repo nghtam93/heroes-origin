@@ -18,11 +18,11 @@
       <div class="container-fluid d-flex align-items-center">
           <div class="logo">
               <a href="index.html">
-                <img src="images/logo.png" width="198" height="152" alt="Logo">
+                <img src="images/logo.svg" width="198" height="152" alt="Logo">
               </a>
           </div>
 
-          <nav class="main__nav ms-auto d-none d-lg-block">
+          <nav class="main__nav flex-grow-1 d-none d-lg-block">
             <ul class="el__menu">
               <li class="menu-item"><a href="#">OVERVIEW</a></li>
               <li class="menu-item"><a href="#">NFT MARKET</a></li>
@@ -35,7 +35,7 @@
           </nav>
 
           <div class="d-none d-lg-block ms-3">
-            <a href="" class="header__btn btn">CREATE ACCOUNT</a>
+            <a href="" class="btn">CREATE ACCOUNT</a>
           </div>
 
           <div class="menu-mb__btn ms-auto" data-id="menu__mobile">
@@ -59,8 +59,8 @@
                 <img src="images/header-text.png" alt="">
               </div>
               <div class="btn__wrap d-sm-flex align-items-center justify-content-center">
-                <div class="me-sm-3 wow fadeInLeft"><a href="" class="btn mb-3">GETING STARTED</a></div>
-                <div class="wow fadeInRight"><a href="" class="btn mb-3">WHITE PAPER</a></div>
+                <div class="me-sm-3 wow fadeInLeft"><a href="" class="btn -large mb-3">GETING STARTED</a></div>
+                <div class="wow fadeInRight"><a href="" class="btn -large -blue mb-3">WHITE PAPER</a></div>
               </div>
             </div>
             <div class="wow fadeInUp d-none d-sm-flex align-items-center justify-content-center">
@@ -72,584 +72,938 @@
         <div class="home-header__leaf"></div>
       </section>
 
+      <section class="home-about">
+        <div class="container container-1300">
+          <div class="el__header">
+            <h2 class="el__title">About <br>Origin</h2>
+          </div>
+          <div class="el__content">
+            <div class="row gx-xl-5">
+              <div class="col-md-6">
+                <p>
+                  Heroes Origin is a series of horizontal multi-player role-playing games (MMORPG roll-screen), a unique series of games with a large loyal community globally in general, as well as in Vietnam in particular. This is the latest product to join Metaverse, developed from the famous Ninja School product line in Vietnam from 2010 to present.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p>Heroes Origin is a story about heroes representing the lands on their journey against evil, the invasion of evil to protect their land.</p>
+                <img src="images/home-about-content.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="home-gameplay">
-        <div class="container">
-          <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-pepper.png" alt=""></div>
-            <h2 class="sc__header__title wow fadeInUp">GAMEPLAYS</h2>
-          </header>
+        <div class="container container-1200">
 
-          <div class="flickity--fade" data-flickity='{ "autoPlay": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": false,"prevNextButtons": true, "draggable": false }'>
-            <div class="slider__item__wrap col-12">
+          <div class="row gx-xl-80 mb-5 pb-3">
+            <div class="col-md-6">
+              <div class="el__character">
 
-              <div class="carousel flickity" data-flickity='{ "contain": true, "wrapAround": false, "cellAlign": "left", "prevNextButtons": false }'>
+                <div class="d-flex gap-5">
+                    <div class="el__character__thumb flex-grow-1">
+                      <img src="images/gamplay-character/character-01.png" class="js-character-change-thumb" alt="">
+                    </div>
 
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-1.png" alt="">
-                        </div>
+
+                    <div class="el__character__box js-character-change-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
                       </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Lightning</h3>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-2.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Poison</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-3.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Ice</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-4.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Fire</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-5.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Wind</h3>
-                      </div>
-                    </div>
-                  </div>
-
-              </div>
-
-              <div class="el__box">
-                <div class="el__box__title">HEROES</div>
-                <div class="el__box__excerpt">
-                  Players can choose heroes based on 5 starting Soul Element: <br>
-                  <strong>Lightning - Poison - Ice - Fire - Wind</strong> <br>
-                  corresponding to 5 weapons<br>
-                  <strong>Sword - Knife - Bow - Pepper - Fan</strong>
                 </div>
+
               </div>
             </div>
-            <div class="slider__item__wrap col-12">
+            <div class="col-md-6">
+              <header class="sc__header mb-5">
+                <h2 class="sc__header__title -large wow fadeInUp">GAME<br>PLAYS</h2>
+              </header>
+              <div class="el__excerpt">
+                <p>Players can choose heroes based on 5 starting Soul Element: </p>
 
-              <div class="carousel flickity" data-flickity='{ "contain": true, "wrapAround": true, "cellAlign": "left", "prevNextButtons": false }'>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-item-1.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Knife</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-item-2.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Bow</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-item-3.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Pepper</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-item-4.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Fan</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-item-5.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Sword</h3>
-                      </div>
-                    </div>
-                  </div>
-
-              </div>
-
-              <div class="el__box">
-                <div class="el__box__title">ITEMS</div>
-                <div class="el__box__excerpt">
-                  <p>Each heroes has <strong>17 item categories</strong> to equip and upgrade.<br>
-                    Each item brings different features, skins, effects and has function to <strong>UPGRADE</strong></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="slider__item__wrap col-12">
-
-              <div class="carousel flickity" data-flickity='{ "contain": true, "wrapAround": true, "cellAlign": "left", "prevNextButtons": false }'>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-pet-1.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Knife</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-pet-2.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Bow</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-pet-3.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Pepper</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-pet-4.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Fan</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slider__item__wrap col-4 col-lg-20">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/game-play-pet-5.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">Sword</h3>
-                      </div>
-                    </div>
-                  </div>
-
-              </div>
-
-              <div class="el__box">
-                <div class="el__box__title">ITEMS</div>
-                <div class="el__box__excerpt">
-                  <p>Each heroes has <strong>17 item categories</strong> to equip and upgrade.<br>
-                    Each item brings different features, skins, effects and has function to <strong>UPGRADE</strong></p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <section class="home-featured">
-        <div class="container">
-          <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-pepper.png" alt=""></div>
-            <h2 class="sc__header__title wow fadeInLeft">Game Feature</h2>
-            <div class="sc__header__excerpt wow fadeInRight">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-            </div>
-          </header>
-
-          <div class="el__box wow fadeInUp">
-            <div class="el__box__title">Free To Play</div>
-
-            <div class="" data-flickity='{ "autoPlay": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": false,"prevNextButtons": true, "draggable": false }'>
-              <div class="slider__item__wrap col-12">
-                <ul class="ul-type-ninja">
-                  <li>Opening job opportunities by smart contract agreement between investors & players.</li>
-                  <li>An investor may hire another to work. </li>
-                  <li>A player can rent other NFT items for playing. </li>
-                </ul>
-              </div>
-              <div class="slider__item__wrap col-12">
-                <ul class="ul-type-ninja">
-                  <li>Opening job opportunities by smart contract agreement between investors & players.</li>
-                  <li>An investor may hire another to work. </li>
-                  <li>A player can rent other NFT items for playing. </li>
-                </ul>
+                <p class="-strong">Lightning - Poison - Ice - Fire - Wind </p>
+                <p>corresponding to 5 weapons</p>
+                <p class="-strong">Sword - Knife - Bow - Pepper - Fan</p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="home-experience">
-        <div class="container">
-          <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-pepper.png" alt=""></div>
-            <h2 class="sc__header__title wow fadeInLeft">EXPERIENCE</h2>
-            <p class="sc__header__excerpt wow fadeInRight">Heroes Origin is a story about heroes representing the lands on their journey against evil, the invasion of evil to protect their land</p>
-          </header>
-
-          <div class="el__video wow fadeInUp">
-            <div class="ratio ratio-16x9 -center">
-              <img src="images/home-experience-videoplay.png" alt="">
-            </div>
-          </div>
-
-        </div>
-        <div class="home-experience__bg"></div>
-      </section>
-
-      <section class="home-nft">
-        <div class="container container-1000">
-          <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-pepper.png" alt=""></div>
-            <h2 class="sc__header__title wow fadeInUp">NFT item</h2>
-          </header>
-
-          <div class="wow fadeInUp">
-            <ul class="nav nav-custom justify-content-center" id="nftTab" role="tablist">
+          <div class="gameplay__tab__wrap">
+            <ul class="nav gameplay-tabs" id="gameplayTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="nft1-tab" data-bs-toggle="tab" data-bs-target="#nft1" type="button" role="tab" aria-controls="nft1" aria-selected="true">HERO</button>
+                <button class="nav-link active" id="gameplay1-tab" data-bs-toggle="tab" data-bs-target="#gameplay1" type="button" role="tab" aria-controls="gameplay1" aria-selected="true">HEROSE</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="nft2-tab" data-bs-toggle="tab" data-bs-target="#nft2" type="button" role="tab" aria-controls="nft2" aria-selected="false">WEAPON</button>
+                <button class="nav-link" id="gameplay2-tab" data-bs-toggle="tab" data-bs-target="#gameplay2" type="button" role="tab" aria-controls="gameplay2" aria-selected="false">ITEMS</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="nft3-tab" data-bs-toggle="tab" data-bs-target="#nft3" type="button" role="tab" aria-controls="nft3" aria-selected="false">PET</button>
+                <button class="nav-link" id="gameplay3-tab" data-bs-toggle="tab" data-bs-target="#gameplay3" type="button" role="tab" aria-controls="gameplay3" aria-selected="false">PET</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="gameplay4-tab" data-bs-toggle="tab" data-bs-target="#gameplay4" type="button" role="tab" aria-controls="gameplay4" aria-selected="false">SKILL</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="nft4-tab" data-bs-toggle="tab" data-bs-target="#nft4" type="button" role="tab" aria-controls="nft4" aria-selected="false">ITEMS</button>
+                <button class="nav-link" id="gameplay5-tab" data-bs-toggle="tab" data-bs-target="#gameplay5" type="button" role="tab" aria-controls="gameplay5" aria-selected="false">LEVEL</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="gameplay6-tab" data-bs-toggle="tab" data-bs-target="#gameplay6" type="button" role="tab" aria-controls="gameplay6" aria-selected="false">GAME ACTIVITIES</button>
               </li>
             </ul>
-            <div class="tab-content" id="nftTabContent">
-              <div class="tab-pane fade show active" id="nft1" role="tabpanel" aria-labelledby="nft1-tab">
-                <div class="flickity js-flickity" data-flickity='{ "autoPlay": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": false,"prevNextButtons": true, "draggable": false }'>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-hero-1.png" alt="">
-                        </div>
+            <div class="tab-content" id="gameplayTabContent">
+              <div class="tab-pane fade show active" id="gameplay1" role="tabpanel" aria-labelledby="gameplay1-tab">
+
+                <div class="el__items">
+
+                  <div class="el__item active js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-01.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
                       </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">HERO NAME</h3>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
                       </div>
                     </div>
                   </div>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-hero-2.png" alt="">
-                        </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-02.png">
+                      <img src="images/gamplay-character/character-thumb-02.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
                       </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">HERO NAME</h3>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 90</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
                       </div>
                     </div>
                   </div>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-hero-3.png" alt="">
-                        </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-03.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
                       </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">HERO NAME</h3>
+                      <div class="el__box__content">
+                        <p>Health: 90</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
                       </div>
                     </div>
                   </div>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-hero-4.png" alt="">
-                        </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-04.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
                       </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">HERO NAME</h3>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 40</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
                       </div>
                     </div>
                   </div>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-hero-5.png" alt="">
-                        </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-02.png">
+                      <img src="images/gamplay-character/character-thumb-05.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
                       </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">HERO NAME</h3>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 20</p>
+                        <p>Defense: 50</p>
                       </div>
                     </div>
                   </div>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-hero-6.png" alt="">
-                        </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-06.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
                       </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">HERO NAME</h3>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 10</p>
                       </div>
                     </div>
                   </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-07.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 80</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-02.png">
+                      <img src="images/gamplay-character/character-thumb-08.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-09.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-10.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-02.png">
+                      <img src="images/gamplay-character/character-thumb-11.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-12.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-13.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-02.png">
+                      <img src="images/gamplay-character/character-thumb-02.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-10.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-07.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-02.png">
+                      <img src="images/gamplay-character/character-thumb-12.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-09.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-07.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-02.png">
+                      <img src="images/gamplay-character/character-thumb-06.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-02.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-01.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-02.png">
+                      <img src="images/gamplay-character/character-thumb-11.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-10.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-02.png">
+                      <img src="images/gamplay-character/character-thumb-03.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el__item js-character">
+                    <div class="el__item__thumb js-character-thumb" data-thumb="images/gamplay-character/character-01.png">
+                      <img src="images/gamplay-character/character-thumb-12.png" alt="">
+                    </div>
+                    <div class="d-none js-character-content">
+                      <div class="el__box__header">
+                        <div class="el__box__title">HERO NAME</div>
+                        <p>Coming from Konoha, this hero fights for justice...</p>
+                      </div>
+                      <div class="el__box__content">
+                        <p>Health: 100</p>
+                        <p>Mana: 100</p>
+                        <p>Streng: 50</p>
+                        <p>Agility: 50</p>
+                        <p>Defense: 50</p>
+                      </div>
+                    </div>
+                  </div>
+
+
 
 
                 </div>
               </div>
-              <div class="tab-pane fade" id="nft2" role="tabpanel" aria-labelledby="nft2-tab">
-                <div class="flickity js-flickity" data-flickity='{ "autoPlay": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": false,"prevNextButtons": true, "draggable": false }'>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-weapon-1.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">ITEM NAME</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-weapon-2.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">ITEM NAME</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-weapon-3.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">ITEM NAME</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-weapon-4.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">ITEM NAME</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-weapon-5.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">ITEM NAME</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__item__wrap col-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="el__item">
-                      <div class="el__item__thumb">
-                        <div class="dnfix__thumb -contain">
-                          <img src="images/home-nft-weapon-6.png" alt="">
-                        </div>
-                      </div>
-                      <div class="el__item__meta">
-                        <h3 class="el__item__title">ITEM NAME</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="tab-pane fade" id="nft3" role="tabpanel" aria-labelledby="nft3-tab">..3.</div>
-              <div class="tab-pane fade" id="nft4" role="tabpanel" aria-labelledby="nft4-tab">..4.</div>
+              <div class="tab-pane fade" id="gameplay2" role="tabpanel" aria-labelledby="gameplay2-tab">Coming Soon...</div>
+              <div class="tab-pane fade" id="gameplay3" role="tabpanel" aria-labelledby="gameplay3-tab">Coming Soon...</div>
+              <div class="tab-pane fade" id="gameplay4" role="tabpanel" aria-labelledby="gameplay4-tab">Coming Soon...</div>
+              <div class="tab-pane fade" id="gameplay5" role="tabpanel" aria-labelledby="gameplay5-tab">Coming Soon...</div>
             </div>
+          </div>
 
+        </div>
+      </section>
+
+      <section class="home-gategame">
+        <div class="container">
+          <header class="sc__header text-center">
+            <div class="e__header__icon">
+              <img src="images/pylon.png" alt="">
+            </div>
+            <h2 class="sc__header__title">GateGame Metaverse</h2>
+            <div class="sc__header__sub">Extended Metaverse for Games</div>
+            <div class="sc__header__excerpt">
+              Heroes Origin is the first game in GateGame's Roll Screen Metaverse MMORPG series. At the same time, Heroes Origin also has its own metaverse that includes next games, territories and special missions.<br>
+              Heroes Origin’s Metaverse has link to GateGame’s Metaverse where the game benefits from the integration of Pylon – GateGame Unique Cross-Game Items.
+            </div>
+          </header>
+        </div>
+
+        <div class="el__pattern">
+
+        </div>
+      </section>
+
+      <section class="home-clgt">
+          <div class="container container-1200">
+            <div class="row gx-xl-100 align-items-center">
+              <div class="col-md-6">
+                <header class="el__header">
+                  <h3 class="el__sub">Pylon Network is a network of energy towers that <strong>"POWER UP"</strong> players in term of stats, skins and effects as they play games while equip Pylons in GateGame Metaverse.
+                  </h3>
+                  <div class="el__excerpt">
+                    Pylon Network is a network of energy towers that "POWER UP" players in term of stats, skins and effects as they play games while equip Pylons in GateGame Metaverse.
+                  </div>
+                </header>
+              </div>
+              <div class="col-md-6">
+                <div class="clgt-tabs__wrap">
+                  <ul class="nav clgt-tabs justify-content-around" id="clgtTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="clgt1-tab" data-bs-toggle="tab" data-bs-target="#clgt1" type="button" role="tab" aria-controls="clgt1" aria-selected="true">
+                        <div class="dnfix__thumb -contain">
+                          <img src="images/clgt-img-01.png" alt="">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="clgt2-tab" data-bs-toggle="tab" data-bs-target="#clgt2" type="button" role="tab" aria-controls="clgt2" aria-selected="false">
+                        <div class="dnfix__thumb -contain">
+                          <img src="images/clgt-img-02.png" alt="">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="clgt3-tab" data-bs-toggle="tab" data-bs-target="#clgt3" type="button" role="tab" aria-controls="clgt3" aria-selected="false">
+                        <div class="dnfix__thumb -contain">
+                          <img src="images/clgt-img-03.png" alt="">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="clgt4-tab" data-bs-toggle="tab" data-bs-target="#clgt4" type="button" role="tab" aria-controls="clgt4" aria-selected="false">
+                        <div class="dnfix__thumb -contain">
+                          <img src="images/clgt-img-04.png" alt="">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="clgt5-tab" data-bs-toggle="tab" data-bs-target="#clgt5" type="button" role="tab" aria-controls="clgt5" aria-selected="false">
+                        <div class="dnfix__thumb -contain">
+                          <img src="images/clgt-img-05.png" alt="">
+                        </div>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="clgtTabContent">
+                    <div class="tab-pane fade show active" id="clgt1" role="tabpanel" aria-labelledby="clgt1-tab">
+                      <div class="row gx-xl-5">
+                        <div class="col-6">
+                          <div class="el__item">
+                            <div class="el__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/home-clgt-img-01.png" alt="">
+                              </div>
+                            </div>
+                            <h3 class="el__item__title">Basic Pets</h3>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="el__item">
+                            <div class="el__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/home-clgt-img-02.png" alt="">
+                              </div>
+                            </div>
+                            <h3 class="el__item__title">Basic Pets</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="clgt2" role="tabpanel" aria-labelledby="clgt2-tab">
+                      <div class="row gx-xl-5">
+                        <div class="col-6">
+                          <div class="el__item">
+                            <div class="el__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/home-clgt-img-01.png" alt="">
+                              </div>
+                            </div>
+                            <h3 class="el__item__title">Basic Pets</h3>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="el__item">
+                            <div class="el__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/home-clgt-img-02.png" alt="">
+                              </div>
+                            </div>
+                            <h3 class="el__item__title">Basic Pets</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="clgt3" role="tabpanel" aria-labelledby="clgt3-tab">
+                      <div class="row gx-xl-5">
+                        <div class="col-6">
+                          <div class="el__item">
+                            <div class="el__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/home-clgt-img-01.png" alt="">
+                              </div>
+                            </div>
+                            <h3 class="el__item__title">Basic Pets</h3>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="el__item">
+                            <div class="el__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/home-clgt-img-02.png" alt="">
+                              </div>
+                            </div>
+                            <h3 class="el__item__title">Basic Pets</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="clgt4" role="tabpanel" aria-labelledby="clgt4-tab">
+                      <div class="row gx-xl-5">
+                        <div class="col-6">
+                          <div class="el__item">
+                            <div class="el__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/home-clgt-img-01.png" alt="">
+                              </div>
+                            </div>
+                            <h3 class="el__item__title">Basic Pets</h3>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="el__item">
+                            <div class="el__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/home-clgt-img-02.png" alt="">
+                              </div>
+                            </div>
+                            <h3 class="el__item__title">Basic Pets</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="clgt5" role="tabpanel" aria-labelledby="clgt5-tab">
+                      <div class="row gx-xl-5">
+                        <div class="col-6">
+                          <div class="el__item">
+                            <div class="el__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/home-clgt-img-01.png" alt="">
+                              </div>
+                            </div>
+                            <h3 class="el__item__title">Basic Pets</h3>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="el__item">
+                            <div class="el__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/home-clgt-img-02.png" alt="">
+                              </div>
+                            </div>
+                            <h3 class="el__item__title">Basic Pets</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="home-token">
+        <div class="container container-1200">
+          <div class="sc-content">
+              <header class="sc__header text-center">
+                <h2 class="sc__header__title">TOKEN OF <br>HEROES ORGIN</h2>
+              </header>
+              <div class="row gx-lg-5">
+               <div class="el__col col-md-6">
+                  <div class="el__item">
+                    <div class="el__item__thumb">
+                      <a href="" class="dnfix__thumb -contain"><img src="images/home-token-01.png" alt="" class="img-fluid mx-auto"></a>
+                    </div>
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title">GOVERANCE TOKEN</h3>
+                        <div class="el__item__sub">
+                          <p>HEROES ORIGIN TOKEN </p>
+                          <p>Symbol: HOT</p>
+                          <p>Total Supply: 1BN</p>
+                        </div>
+                        <hr>
+                         <div class="el__item__excerpt">
+                          <p>HOT’s use cases</p>
+                          <ul>
+                            <li>+ Exchange for GOLD, an in-game currency for payments and activity fees.</li>
+                            <li>+ Reward in special events.</li>
+                            <li>+ Farming / Staking</li>
+                            <li>+ Governance and DAO participation</li>
+                            <li>+ Exchange for next LANGLA’ series in-game currency</li>
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="el__col col-md-6">
+                  <div class="el__item">
+                    <div class="el__item__thumb">
+                      <a href="" class="dnfix__thumb -contain"><img src="images/home-token-02.png" alt="" class="img-fluid mx-auto"></a>
+                    </div>
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title">UTILITY TOKEN</h3>
+                        <div class="el__item__sub">
+                          <p>SILVER</p>
+                          <p>Symbol: SIL</p>
+                          <p>Total Supply: UNLIMITED</p>
+                        </div>
+                        <hr>
+                         <div class="el__item__excerpt">
+                          <p>SIL’s use cases</p>
+                          <ul>
+                            <li>+ Reward for offline and in-game activities.</li>
+                            <li>+ Pay fee for offline and in-game activities.</li>
+                            <li>+ Mint NFTs and upgrade items.</li>
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
           </div>
         </div>
       </section>
 
       <section class="home-earn">
-        <div class="container">
-          <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-pepper.png" alt=""></div>
-            <h2 class="sc__header__title wow fadeInUp">HOW TO EARN <br>in Heros Origin</h2>
-          </header>
-          <ul class="nav nav-custom justify-content-center" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="earn1-tab" data-bs-toggle="tab" data-bs-target="#earn1" type="button" role="tab" aria-controls="earn1" aria-selected="true">PLAY</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="earn2-tab" data-bs-toggle="tab" data-bs-target="#earn2" type="button" role="tab" aria-controls="earn2" aria-selected="false">DEFI</button>
-            </li>
-          </ul>
-          <div class="tab-content wow fadeInUp" id="myTabContent">
-            <div class="tab-pane fade show active" id="earn1" role="tabpanel" aria-labelledby="earn1-tab">
-              <p class="el__text text-center">The game is Free to Play and Gamers can start earning from as early as day 1</p>
-
-              <div class="el__box">
-                <div class="row gx-lg-5 position-relative">
-                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                    <h5 class="el__box__title">Rewards</h5>
-                    <ul class="ul-type-ninja">
-                      <li>Silver</li>
-                      <li>Other Currencies</li>
-                      <li>NFTs</li>
-                    </ul>
-                  </div>
-                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                    <h5 class="el__box__title">Create NFTs</h5>
-                    <ul class="ul-type-ninja">
-                      <li>Upgrade Items</li>
-                      <li>Mint Items</li>
-                    </ul>
-                  </div>
-                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                    <h5 class="el__box__title">Trading</h5>
-                    <ul class="ul-type-ninja">
-                      <li>Trade Silver</li>
-                      <li>Trade NFTs</li>
-                    </ul>
-                  </div>
-                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                    <h5 class="el__box__title">P2P Ecosystem</h5>
-                    <ul class="ul-type-ninja">
-                      <li>Guild</li>
-                      <li>Lending</li>
-                      <li>Services</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+        <div class="container container-1200">
+          <div class="row">
+            <div class="col-md-5">
+              <header class="sc__header">
+                <h2 class="sc__header__title wow fadeInUp">HOW TO <br>EARN</h2>
+                <h2 class="sc__header__sub -blue text-uppercase wow fadeInUp">in Heros Origin</h2>
+              </header>
             </div>
-            <div class="tab-pane fade" id="earn2" role="tabpanel" aria-labelledby="earn2-tab">
-              <p class="el__text text-center">HOT allows gamers to participate in and benefits from many Defi activities</p>
+            <div class="col-md-7">
+              <ul class="nav earn-tabs mb-5" id="earnTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link -s1 active" id="earn1-tab" data-bs-toggle="tab" data-bs-target="#earn1" type="button" role="tab" aria-controls="earn1" aria-selected="true">PLAY</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link -s2" id="earn2-tab" data-bs-toggle="tab" data-bs-target="#earn2" type="button" role="tab" aria-controls="earn2" aria-selected="false">DEFI</button>
+                </li>
+              </ul>
+              <div class="tab-content wow fadeInUp" id="earnTabContent">
+                <div class="tab-pane fade show active" id="earn1" role="tabpanel" aria-labelledby="earn1-tab">
+                  <p class="el__text">The game is Free to Play and Gamers can start earning from as early as day 1</p>
 
-              <div class="el__box">
-                <div class="row gx-lg-5 position-relative">
-                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                    <h5 class="el__box__title">Governance</h5>
-                    <ul class="ul-type-ninja">
-                      <li>Participate in DAO</li>
-                    </ul>
-                  </div>
-                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                    <h5 class="el__box__title">Farming</h5>
-                    <ul class="ul-type-ninja">
-                      <li>Deposit HOT do earn GOLD or next game curency</li>
-                    </ul>
-                  </div>
-                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                    <h5 class="el__box__title">Staking</h5>
-                    <ul class="ul-type-ninja">
-                      <li>Stake HOT to earn SIL</li>
-                      <li>Stake HOT to earn NTFs</li>
-                    </ul>
-                  </div>
-                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                    <h5 class="el__box__title">Trading</h5>
-                    <ul class="ul-type-ninja">
-                      <li>Trade Hot</li>
-                      <li>Trade NFTs</li>
-                    </ul>
+                  <div class="el__box">
+                    <div class="row">
+                      <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                        <h5 class="el__box__title">Rewards</h5>
+                        <ul class="ul-type-ninja">
+                          <li>Silver</li>
+                          <li>Other Currencies</li>
+                          <li>NFTs</li>
+                        </ul>
+                      </div>
+                      <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                        <h5 class="el__box__title">Create NFTs</h5>
+                        <ul class="ul-type-ninja">
+                          <li>Upgrade Items</li>
+                          <li>Mint Items</li>
+                        </ul>
+                      </div>
+                      <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                        <h5 class="el__box__title">Trading</h5>
+                        <ul class="ul-type-ninja">
+                          <li>Trade Silver</li>
+                          <li>Trade NFTs</li>
+                        </ul>
+                      </div>
+                      <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                        <h5 class="el__box__title">P2P Ecosystem</h5>
+                        <ul class="ul-type-ninja">
+                          <li>Guild</li>
+                          <li>Lending</li>
+                          <li>Services</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="tab-pane fade" id="earn2" role="tabpanel" aria-labelledby="earn2-tab">
+                  <p class="el__text">HOT allows gamers to participate in and benefits from many Defi activities</p>
 
+                  <div class="el__box">
+                    <div class="row">
+                      <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                        <h5 class="el__box__title">Governance</h5>
+                        <ul class="ul-type-ninja">
+                          <li>Participate in DAO</li>
+                        </ul>
+                      </div>
+                      <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                        <h5 class="el__box__title">Farming</h5>
+                        <ul class="ul-type-ninja">
+                          <li>Deposit HOT do earn GOLD or next game curency</li>
+                        </ul>
+                      </div>
+                      <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                        <h5 class="el__box__title">Staking</h5>
+                        <ul class="ul-type-ninja">
+                          <li>Stake HOT to earn SIL</li>
+                          <li>Stake HOT to earn NTFs</li>
+                        </ul>
+                      </div>
+                      <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                        <h5 class="el__box__title">Trading</h5>
+                        <ul class="ul-type-ninja">
+                          <li>Trade Hot</li>
+                          <li>Trade NFTs</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
 
@@ -657,532 +1011,357 @@
         <div class="home-earn__ic">
           <div class="-ic"></div>
         </div>
-        <div class="bg-mask"></div>
       </section>
 
-      <section class="home-activities">
-        <div class="container">
-          <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-pepper.png" alt=""></div>
-            <h2 class="sc__header__title wow fadeInUp">GAME ACTIVITIES</h2>
-          </header>
-          <div class="flickity" data-flickity='{ "autoPlay": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": false,"prevNextButtons": true }'>
-            <div class="slider__item__wrap col-12 col-sm-6 col-lg-4">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-activities-img-1.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Cycle Quest</h3>
-                  <div class="el__item__sub">Level 10</div>
-                  <div class="el__item__excerpt">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-sm-6 col-lg-4">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-activities-img-2.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Subjugate Demonic Beasts</h3>
-                  <div class="el__item__sub">Level 15</div>
-                  <div class="el__item__excerpt">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-sm-6 col-lg-4">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-activities-img-3.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Mysterious Cave</h3>
-                  <div class="el__item__sub">Level 15</div>
-                  <div class="el__item__excerpt">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-sm-6 col-lg-4">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-activities-img-4.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Mysterious Cave</h3>
-                  <div class="el__item__sub">Level 15</div>
-                  <div class="el__item__excerpt">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-sm-6 col-lg-4">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-activities-img-5.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Mysterious Cave</h3>
-                  <div class="el__item__sub">Level 15</div>
-                  <div class="el__item__excerpt">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-sm-6 col-lg-4">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-activities-img-6.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Mysterious Cave</h3>
-                  <div class="el__item__sub">Level 15</div>
-                  <div class="el__item__excerpt">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section class="home-marketing">
+        <div class="container container-1200">
 
+          <div class="row">
+            <div class="col-md-9">
+              <div class="el__box">
+                <ul>
+                  <li>
+                    <div class="li__key">AGE</div>
+                    <div class="li__value">AGE</div>
+                  </li>
+                  <li>
+                    <div class="li__key">SEX</div>
+                    <div class="li__value">AGE</div>
+                  </li>
+                  <li>
+                    <div class="li__key">PLAYER REQUEST</div>
+                    <div class="li__value">
+                        <p>- The investors</p>
+                        <p>- Gameplayers and fan-investors</p>
+                        <p>- Traditional gameplayers</p>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__key">TARGET REGION</div>
+                    <div class="li__value">
+                        <p>- Aim for Global Market with English version</p>
+                        <p>- Launch Phase: focus Vietnam, SEA, EU and Thai</p>
+                        <p>- Next phase: Indonesia, Philippines and Cambodia</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <header class="sc__header text-center">
+                <h2 class="sc__header__title">MARKETING STRATEGY</h2>
+              </header>
+            </div>
           </div>
+
+        </div>
+
+        <div class="sc__pattern">
+          <div class="sc__pattern--xe"></div>
         </div>
       </section>
 
       <section class="home-tokenmoics">
-        <div class="container container-1000">
+        <div class="container container-1300">
           <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-pepper.png" alt=""></div>
             <h2 class="sc__header__title wow fadeInUp">TOKENOMICS</h2>
           </header>
-          <div class="row">
+          <div class="row gx-xxl-5 align-items-center">
             <div class="col-md-6 wow fadeInLeft mb-4 mb-md-0 text-center">
-              <img src="images/home-token-circle.png" alt="">
+              <div class="el__box">
+                <div class="el__box__wrap">
+                  <div class="el__box__thumb">
+                    <img src="images/home-token-01.png" alt="">
+                  </div>
+
+                  <p class="el__box__title">Allocation PRL</p>
+                  <p>Total Supply</p>
+                  <p class="el__box__number">1.000.000.000</p>
+                </div>
+
+                <div class="el__box__percent">
+                  <div class="el--1">
+                    <p>5%</p>
+                    <p>Strategic <br>Partner</p>
+                  </div>
+                  <div class="el--2">
+                    <p>14%</p>
+                    <p>Private <br>Sale</p>
+                  </div>
+                  <div class="el--3">
+                    <p>1%</p>
+                    <p>Public <br>Sale</p>
+                  </div>
+                  <div class="el--4">
+                    <p>20%</p>
+                    <p>Staking<br>Reward</p>
+                  </div>
+                  <div class="el--5">
+                    <p>25%</p>
+                    <p>Game <br>Reward</p>
+                  </div>
+                  <div class="el--6">
+                    <p>2.5%</p>
+                    <p>Advisor</p>
+                  </div>
+                  <div class="el--7">
+                    <p>11.5%</p>
+                    <p>Team</p>
+                  </div>
+                  <div class="el--8">
+                    <p>5%</p>
+                    <p>Ecosystem <br>Fund</p>
+                  </div>
+                  <div class="el--9">
+                    <p>6%</p>
+                    <p>Liquidity</p>
+                  </div>
+                  <div class="el--10">
+                    <p>10%</p>
+                    <p>Marketing</p>
+                  </div>
+
+                </div>
+              </div>
             </div>
             <div class="col-md-6 wow fadeInRight">
               <div class="el__meta">
-                <ul class="row">
-                  <li class="col-6 col-md-12 -percent1">Marketing: 5%</li>
-                  <li class="col-6 col-md-12 -percent2" style="--background-color: #782ADB;">Liquidity: 6%</li>
-                  <li class="col-6 col-md-12 -percent3" style="--background-color: #DD51AD;">Ecosystem Fund: 5%</li>
-                  <li class="col-6 col-md-12 -percent4" style="--background-color: #D72F4D;">Team: 11.5%</li>
-                  <li class="col-6 col-md-12 -percent5" style="--background-color: #DB542A;">Advisor: 2.5%</li>
-                  <li class="col-6 col-md-12 -percent6" style="--background-color: #DBA92A;">Strategic Partner: 5%</li>
-                  <li class="col-6 col-md-12 -percent7" style="--background-color: #8DDB2A;">Private sale: 14%</li>
-                  <li class="col-6 col-md-12 -percent8" style="--background-color: #2ADBB0;">Public Sale: 1%</li>
-                  <li class="col-6 col-md-12 -percent9" style="--background-color: #07B0F9;">Staking Reward: 20%</li>
-                  <li class="col-6 col-md-12 -percent10" style="--background-color: #DC5FB2;">Game Rewad: 25%</li>
-                </ul>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">ROUND</th>
+                      <th scope="col">TOKEN</th>
+                      <th scope="col">%</th>
+                      <th scope="col">VESTING</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Strategic <br>Partner</th>
+                      <td>50.000.000</td>
+                      <td>5%</td>
+                      <td>5% at TGE Lock 3 months, vesting linear for 19 months</td>
+                    </tr>
+
+                    <tr>
+                      <th>Private <br>Sale</th>
+                      <td>140.000.000</td>
+                      <td>14%</td>
+                      <td>10% at TGE Lock 3 months, vesting linear for 12 months</td>
+                    </tr>
+                    <tr>
+                      <th>Public <br>Sale</th>
+                      <td>10.000.000</td>
+                      <td>1%</td>
+                      <td>25% at TGE, vesting linear for 12 months</td>
+                    </tr>
+                    <tr>
+                      <th>Staking <br>Reward</th>
+                      <td>200.000.000</td>
+                      <td>20%</td>
+                      <td>Lock till Staking Function available</td>
+                    </tr>
+                    <tr>
+                      <th>Game <br>Reward</th>
+                      <td>250.000.000</td>
+                      <td>25%</td>
+                      <td>Cliff for 1 month, vesting linear for 36 months</td>
+                    </tr>
+                    <tr>
+                      <th>Advisor</th>
+                      <td>25.000.000</td>
+                      <td>2.5%</td>
+                      <td>Lock 1 year, vesting linear for 36 months</td>
+                    </tr>
+                    <tr>
+                      <th>Team</th>
+                      <td>115.000.000</td>
+                      <td>11.5%</td>
+                      <td>Lock 1 year, vesting linear for 24 months</td>
+                    </tr>
+                    <tr>
+                      <th>Ecosystem <br>Fund</th>
+                      <td>50.000.000</td>
+                      <td>5%</td>
+                      <td>Cliff for 1 month, vesting linear for 24 months</td>
+                    </tr>
+                    <tr>
+                      <th>Liquidity</th>
+                      <td>60.000.000</td>
+                      <td>6%</td>
+                      <td>Some unlock, Some locked</td>
+                    </tr>
+                    <tr>
+                      <th>Marketing</th>
+                      <td>100.000.000</td>
+                      <td>10%</td>
+                      <td>Cliff for 1 month, vesting linear for 36 months in 3 years</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="bg-mask"></div>
-      </section>
-
-      <section class="home-team">
-        <div class="container container-1000">
-          <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-dogman.png" alt=""></div>
-            <h2 class="sc__header__title wow fadeInUp">Core Team</h2>
-          </header>
-          <div class="flickity wow fadeInUp" data-flickity='{ "autoPlay": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": false,"prevNextButtons": true}'>
-            <div class="slider__item__wrap col-12 col-md-4 col-lg-3">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-team-img-1.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">MICHAEL BLUE</h3>
-                  <div class="el__item__excerpt">
-                    CEO - FOUNDER<br>
-                    Founder Vilas Viet Nam<br>
-                    CEO Time group
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-md-4 col-lg-3">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-team-img-1.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">MICHAEL BLUE</h3>
-                  <div class="el__item__excerpt">
-                    CEO - FOUNDER<br>
-                    Founder Vilas Viet Nam<br>
-                    CEO Time group
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-md-4 col-lg-3">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-team-img-1.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">MICHAEL BLUE</h3>
-                  <div class="el__item__excerpt">
-                    CEO - FOUNDER<br>
-                    Founder Vilas Viet Nam<br>
-                    CEO Time group
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-md-4 col-lg-3">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-team-img-1.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">MICHAEL BLUE</h3>
-                  <div class="el__item__excerpt">
-                    CEO - FOUNDER<br>
-                    Founder Vilas Viet Nam<br>
-                    CEO Time group
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="home-advisors">
-        <div class="container">
-          <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-pepper.png" alt=""></div>
-            <h2 class="sc__header__title wow fadeInUp">ADVISOR</h2>
-          </header>
-          <div class="flickity wow fadeInUp" data-flickity='{ "autoPlay": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": false,"prevNextButtons": true}'>
-            <div class="slider__item__wrap col-12 col-md-6 col-lg-3">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-team-img-1.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">MICHAEL BLUE</h3>
-                  <div class="el__item__excerpt">
-                    CEO - FOUNDER<br>
-                    Founder Vilas Viet Nam<br>
-                    CEO Time group
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-md-6 col-lg-3">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-team-img-1.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">MICHAEL BLUE</h3>
-                  <div class="el__item__excerpt">
-                    CEO - FOUNDER<br>
-                    Founder Vilas Viet Nam<br>
-                    CEO Time group
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-        <div class="bg-mask"></div>
-      </section>
-
-      <section class="home-partners">
-        <div class="container">
-          <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-pepper.png" alt=""></div>
-            <h2 class="sc__header__title wow fadeInUp">Partners & backers</h2>
-          </header>
-          <div class="row gx-2 gx-lg-3 wow fadeInUp">
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-1.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-2.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-3.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-4.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-5.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-6.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-7.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-8.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-9.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-10.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-11.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-12.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-13.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-14.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-15.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/home-partner-16.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-
-
           </div>
         </div>
       </section>
 
       <section class="home-roadmap">
-        <div class="container">
-          <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-pepper.png" alt=""></div>
+        <div class="container position-relative">
+          <header class="sc__header">
             <h2 class="sc__header__title wow fadeInUp">ROAD MAP</h2>
           </header>
 
-          <div class="flickity wow fadeInUp" data-flickity='{ "autoPlay": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": true,"prevNextButtons": false}'>
-            <div class="slider__item__wrap col-12 col-md-4 col-lg-3">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/roadmap.png" alt="">
+          <div class="home-roadmap__slider wow fadeInUp">
+            <div class="slider__wrap">
+              <div class="flickity__slider flickity" data-flickity='{  "cellSelector": ".slider__item__wrap", "autoPlay": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": true,"prevNextButtons": true}'>
+
+                <div class="slider__item__wrap col-12 col-md-6">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title">Q4/2021</h3>
+                      <div class="el__item__excerpt">
+                        <ol>
+                          <li>Launch Landing Page</li>
+                          <li>Token Generation Event (IDO)</li>
+                          <li>Launch Earning Feature
+                            <ul>
+                              <li>Launch Farming PRL/BUSD</li>
+                              <li>Launch Staking PRL</li>
+                              <li>Launch Staking NFT</li>
+                            </ul>
+                          </li>
+                          <li>Foundation Game: Craft Paragon</li>
+                          <li>Allow submission of Paragon Design
+                            <ul>
+                              <li>Copyright protechtion: NFT Hydra System</li>
+                              <li>Copyright monetization</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+
+                    </div>
                   </div>
                 </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Q3/2021</h3>
-                  <div class="el__item__excerpt">
-                    <ul>
-                      <li>Complete Ideation</li>
-                      <li>Team Recruitment</li>
-                      <li>Start Building the Product</li>
-                    </ul>
+
+                <div class="slider__item__wrap col-12 col-md-6">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title">Q1/2022</h3>
+                      <div class="el__item__excerpt">
+                        <ol>
+                          <li>Launch Marketplace
+                            <ul>
+                              <li>Buy/Sell Rune</li>
+                              <li>Buy/Sell Design</li>
+                              <li>Buy/Sell Paragon</li>
+                            </ul>
+                          </li>
+                          <li>Launch Mining Game
+                            <ul>
+                              <li>Woodcutter</li>
+                            </ul>
+                          </li>
+                          <li>exhibition & Auction Event
+                            <ul>
+                              <li>The Most Ingenious NFT Paragons</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-md-4 col-lg-3">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/roadmap.png" alt="">
+
+                <div class="slider__item__wrap col-12 col-md-6">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title">Q1/2022</h3>
+                      <div class="el__item__excerpt">
+                        <ol>
+                          <li>Launch Marketplace
+                            <ul>
+                              <li>Buy/Sell Rune</li>
+                              <li>Buy/Sell Design</li>
+                              <li>Buy/Sell Paragon</li>
+                            </ul>
+                          </li>
+                          <li>Launch Mining Game
+                            <ul>
+                              <li>Woodcutter</li>
+                            </ul>
+                          </li>
+                          <li>exhibition & Auction Event
+                            <ul>
+                              <li>The Most Ingenious NFT Paragons</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Q4/2021</h3>
-                  <div class="el__item__excerpt">
-                    <ul>
-                      <li>Complete Ideation</li>
-                      <li>Team Recruitment</li>
-                      <li>Start Building the Product</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-md-4 col-lg-3">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/roadmap.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Q1/2022</h3>
-                  <div class="el__item__excerpt">
-                    <ul>
-                      <li>Complete Ideation</li>
-                      <li>Team Recruitment</li>
-                      <li>Start Building the Product</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12 col-md-4 col-lg-3">
-              <div class="el__item">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/roadmap.png" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Q2/2022</h3>
-                  <div class="el__item__excerpt">
-                    <ul>
-                      <li>Complete Ideation</li>
-                      <li>Team Recruitment</li>
-                      <li>Start Building the Product</li>
-                    </ul>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
-
+          <div class="el__pattern"></div>
         </div>
+      </section>
 
-        <div class="bg-mask"></div>
+      <section class="home-team">
+        <div class="container container-1000">
+          <header class="sc__header text-center">
+            <div class="sc__header__icon wow fadeInUp"><img src="images/home-team-character.png" alt=""></div>
+            <h2 class="sc__header__title wow fadeInUp">Core Team</h2>
+          </header>
+          <div class="sc__content">
+            <div class="flickity wow fadeInUp" data-flickity='{ "autoPlay": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": false,"prevNextButtons": true}'>
+              <div class="slider__item__wrap col-12 col-md-6">
+                <div class="el__item">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb -contain">
+                      <img src="images/home-team-img-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="el__item__meta">
+                    <h3 class="el__item__title">A TAN</h3>
+                    <div class="el__item__excerpt">
+                      Co-founder of  Ninja School’s series
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item__wrap col-12 col-md-6">
+                <div class="el__item">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb -contain">
+                      <img src="images/home-team-img-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="el__item__meta">
+                    <h3 class="el__item__title">DUNG</h3>
+                    <div class="el__item__excerpt">
+                      Co-founder of  Ninja School’s series
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="home-records">
         <div class="container">
           <header class="sc__header text-center">
-            <div class="sc__header__icon wow fadeInUp"><img src="images/ic-pepper.png" alt=""></div>
             <h2 class="sc__header__title">PROVEN SUCCESS RECORDS</h2>
             <div class="sc__header__excerpt">Incentives To Both Free And Paid Players</div>
           </header>
 
-          <div class="el__text">TOP 1 of MMORPG side scrolling game in Vietnam through all platforms in the last 12 years. Besides, this game is first ever game with unique core-engine developed by Vietnamese team.</div>
+          <h5 class="el__text text-center">TOP 1 of MMORPG side scrolling game in Vietnam through all platforms in the last 12 years. Besides, this game is first ever game with unique core-engine developed by Vietnamese team.</h5>
 
           <div class="el__box">
             <div class="row">
@@ -1190,8 +1369,8 @@
                 <img src="images/home-record-img-1.png" alt="">
               </div>
               <div class="col-md-6">
-                <div class="el__title">Most attractive game with paid user</div>
-                <div class="el__excerpt">
+                <div class="el__item__title">Most attractive game with paid user</div>
+                <div class="el__item__excerpt">
                   Top revenue for MMORPG side scrolling game in Vietnam<br>New MMORPG game with highest revenue of SOHAGAME
                 </div>
               </div>
@@ -1203,8 +1382,8 @@
                 </div>
               </div>
               <div class="col-md-7 col-lg-6">
-                <div class="el__title">Rewards for free users</div>
-                <div class="el__excerpt">
+                <div class="el__item__title">Rewards for free users</div>
+                <div class="el__item__excerpt">
                 <ul>
                   <li>In the last 12 years, the game is being operated with average organic interaction of approximately 400 interacts per feed</li>
                   <li>New game with highest record of Daily Active User and Peak Connection User in the history of SOHAGAME. The average Daily Active User is kept at 20,000 users per day</li>
@@ -1222,12 +1401,182 @@
         </div>
       </section>
 
+      <section class="home-partners">
+        <div class="container container-1200">
+          <header class="sc__header text-center">
+            <h2 class="sc__header__title wow fadeInUp">Partners backers</h2>
+          </header>
+
+          <p class="sc__text text-center">PUBLISHING PARTNER</p>
+          <div class="row gx-2 gx-lg-4 justify-content-center mb-4">
+            <div class="col-12 col-md-5">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-1.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <p class="sc__text text-center">NON – CRYPTO (PR PARTNERS)</p>
+          <div class="row gx-2 gx-lg-4 wow fadeInUp">
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-2.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-3.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-4.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-5.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-6.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-7.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-8.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-9.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-10.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-11.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-12.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-13.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-14.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-15.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-16.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/partner/home-partner-17.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       <footer class="footer">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
               <a href="index.html" class="footer__logo">
-                <img src="images/logo-footer.png" alt="">
+                <img src="images/logo-footer.svg" alt="">
               </a>
             </div>
             <div class="col-md-3">

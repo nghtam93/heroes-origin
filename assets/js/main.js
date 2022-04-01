@@ -105,10 +105,35 @@ $(document).ready(function(){
     $('.menu-mb__btn').dnmenu()
 
     //Home page
-    $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
-      $('.js-flickity').flickity('resize');
-    })
+    // $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+    //   $('.js-flickity').flickity('resize');
+    // })
+    //
+    //
+    // external js: flickity.pkgd.js
+    // add this code
+    Flickity.prototype._createResizeClass = function() {
+      this.element.classList.add('flickity-resize');
+    };
 
+    Flickity.createMethods.push('_createResizeClass');
+
+    var resize = Flickity.prototype.resize;
+    Flickity.prototype.resize = function() {
+      this.element.classList.remove('flickity-resize');
+      resize.call( this );
+      this.element.classList.add('flickity-resize');
+    };
+
+    // Section character
+    $('.js-character').on("click",function(e) {
+        $(this).closest('.tab-pane').find('.js-character').removeClass('active')
+        $(this).addClass('active')
+        var link = $(this).find('.js-character-thumb').data('thumb')
+        var text = $(this).find('.js-character-content').html()
+        $('.js-character-change-thumb').attr('src',link)
+        $('.js-character-change-content').html(text)
+    })
     // End home page
 
 });

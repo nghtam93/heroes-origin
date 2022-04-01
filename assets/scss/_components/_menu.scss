@@ -7,17 +7,13 @@ $font-color: #fff;
 
 .main__nav{
     position:relative;
-    max-width: 1400px;
     z-index:9;
     text-transform: uppercase;
     color: $font-color;
 
-    font-family: 'Smooch Sans';
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
 
     transition: opacity .5s;
     .sc__wrap{
@@ -29,7 +25,7 @@ $font-color: #fff;
     a{
         color: $font-color;
         transition: color 0.3s;
-        text-shadow: -1px -1px 0 #02539e, 1px -1px 0 #02539e, -1px 1px 0 #02539e, 1px 1px 0 #02539e;
+        text-shadow: 2px 2px 0 #395aa5, 2px -2px 0 #395aa5, -2px -2px 0 #395aa5, -2px 2px 0 #395aa5, 2px 1px 0 #395aa5, 2px -1px 0 #395aa5, -2px -1px 0 #395aa5, -2px 1px 0 #395aa5, 2px 0px 0 #395aa5, 2px 0px 0 #395aa5, -2px 0px 0 #395aa5, -2px 0px 0 #395aa5, 1px 2px 0 #395aa5, 1px -2px 0 #395aa5, -1px -2px 0 #395aa5, -1px 2px 0 #395aa5, 1px 1px 0 #395aa5, 1px -1px 0 #395aa5, -1px -1px 0 #395aa5, -1px 1px 0 #395aa5, 1px 0px 0 #395aa5, 1px 0px 0 #395aa5, -1px 0px 0 #395aa5, -1px 0px 0 #395aa5, 0px 2px 0 #395aa5, 0px -2px 0 #395aa5, 0px -2px 0 #395aa5, 0px 2px 0 #395aa5, 0px 1px 0 #395aa5, 0px -1px 0 #395aa5, 0px -1px 0 #395aa5, 0px 1px 0 #395aa5, 0px 0px 0 #395aa5, 0px 0px 0 #395aa5, 0px 0px 0 #395aa5, 0px 0px 0 #395aa5, 0 0 0 #395aa5;
     }
     .el__menu{
         width: 100%;
