@@ -34,11 +34,11 @@
             </ul>
           </nav>
 
-          <div class="ms-auto ms-xl-3">
+          <div class="d-none d-sm-block ms-auto ms-xl-3">
             <a href="" class="btn">CREATE ACCOUNT</a>
           </div>
 
-          <div class="menu-mb__btn ms-3" data-id="menu__mobile">
+          <div class="menu-mb__btn ms-auto ms-sm-2" data-id="menu__mobile">
             <span class="iconz-bar"></span>
             <span class="iconz-bar"></span>
             <span class="iconz-bar"></span>
@@ -86,7 +86,9 @@
               </div>
               <div class="col-md-6 wow fadeInRight">
                 <p>Heroes Origin is a story about heroes representing the lands on their journey against evil, the invasion of evil to protect their land.</p>
-                <img src="images/home-about-content.png" alt="">
+                <p class="text-center text-sm-start">
+                  <img src="images/home-about-content.png" alt="">
+                </p>
               </div>
             </div>
           </div>
@@ -113,11 +115,8 @@
             <div class="col-lg-6 wow fadeInLeft">
               <div class="el__character">
 
-                <div class="d-flex gap-5 align-items-center">
-                    <div class="el__character__thumb flex-grow-1">
-                      <img src="images/gamplay-character/character-01.png" class="js-character-change-thumb" alt="">
-                    </div>
-                    <div class="el__character__box js-character-change-content">
+                <div class="d-sm-flex gap-5 align-items-center">
+                    <div class="el__character__box order-sm-2 js-character-change-content">
                       <div class="el__character__header">
                         <div class="el__character__title">HERO NAME</div>
                         <p>Coming from Konoha, this hero fights for justice...</p>
@@ -129,6 +128,9 @@
                         <p>Agility: 50</p>
                         <p>Defense: 50</p>
                       </div>
+                    </div>
+                    <div class="el__character__thumb flex-grow-1">
+                      <img src="images/gamplay-character/character-01.png" class="js-character-change-thumb" alt="">
                     </div>
                 </div>
 
@@ -671,16 +673,7 @@
       <section class="home-clgt">
           <div class="container container-1200">
             <div class="row gx-xl-100 align-items-center">
-              <div class="col-lg-6 wow fadeInLeft">
-                <header class="el__header">
-                  <h3 class="el__sub">Pylon Network is a network of energy towers that <strong>"POWER UP"</strong> players in term of stats, skins and effects as they play games while equip Pylons in GateGame Metaverse.
-                  </h3>
-                  <div class="el__excerpt">
-                    Pylon Network is a network of energy towers that "POWER UP" players in term of stats, skins and effects as they play games while equip Pylons in GateGame Metaverse.
-                  </div>
-                </header>
-              </div>
-              <div class="col-lg-6 wow fadeInUp">
+              <div class="col-lg-6 mb-4 mb-md-0 order-md-2 wow fadeInUp">
                 <div class="clgt-tabs__wrap">
                   <ul class="nav clgt-tabs justify-content-around" id="clgtTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -844,6 +837,17 @@
                 </div>
 
               </div>
+
+              <div class="col-lg-6 wow fadeInLeft">
+                <header class="el__header">
+                  <h3 class="el__sub">Pylon Network is a network of energy towers that <strong>"POWER UP"</strong> players in term of stats, skins and effects as they play games while equip Pylons in GateGame Metaverse.
+                  </h3>
+                  <div class="el__excerpt">
+                    Pylon Network is a network of energy towers that "POWER UP" players in term of stats, skins and effects as they play games while equip Pylons in GateGame Metaverse.
+                  </div>
+                </header>
+              </div>
+
             </div>
           </div>
       </section>
@@ -858,11 +862,13 @@
 
                 <div class="el__col col-md-6 wow fadeInLeft">
                   <div class="el__item">
-                    <div class="el__item__thumb">
-                      <a href="" class="dnfix__thumb -contain"><img src="images/home-token-01.png" alt="" class="img-fluid mx-auto"></a>
+                    <div class="el__item__header">
+                      <div class="el__item__thumb">
+                        <a href="" class="dnfix__thumb -contain"><img src="images/home-token-01.png" alt="" class="img-fluid mx-auto"></a>
+                      </div>
+                      <h3 class="el__item__title">GOVERANCE TOKEN</h3>
                     </div>
                     <div class="el__item__meta">
-                      <h3 class="el__item__title">GOVERANCE TOKEN</h3>
                         <div class="el__item__sub">
                           <p>HEROES ORIGIN TOKEN </p>
                           <p>Symbol: HOT</p>
@@ -885,11 +891,14 @@
 
                 <div class="el__col col-md-6 wow fadeInRight">
                   <div class="el__item">
-                    <div class="el__item__thumb">
-                      <a href="" class="dnfix__thumb -contain"><img src="images/home-token-02.png" alt="" class="img-fluid mx-auto"></a>
+                    <div class="el__item__header">
+                      <div class="el__item__thumb">
+                        <a href="" class="dnfix__thumb -contain"><img src="images/home-token-02.png" alt="" class="img-fluid mx-auto"></a>
+                      </div>
+                      <h3 class="el__item__title">UTILITY TOKEN</h3>
                     </div>
                     <div class="el__item__meta">
-                      <h3 class="el__item__title">UTILITY TOKEN</h3>
+
                         <div class="el__item__sub">
                           <p>SILVER</p>
                           <p>Symbol: SIL</p>
@@ -918,7 +927,7 @@
           <div class="row">
             <div class="col-lg-5">
               <header class="sc__header">
-                <h2 class="sc__header__title mb-4 wow fadeInUp">HOW TO <br>EARN</h2>
+                <h2 class="sc__header__title -large mb-4 wow fadeInUp">HOW TO <br>EARN</h2>
                 <o class="sc__header__sub -blue text-uppercase wow fadeInRight">in Heros Origin</o>
               </header>
             </div>

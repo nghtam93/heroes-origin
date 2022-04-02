@@ -52,13 +52,20 @@
     @media (max-width:991px){
     }
     @media (max-width:767px){
-
+        &__title {
+            font-size: 40px;
+            line-height: 54px;
+        }
     }
     @media (max-width:575px){
-
+        margin-bottom: 40px;
         &__title {
-            font-size: 28px;
+            font-size: 30px;
             line-height: 36px;
+        }
+        &__sub {
+            font-size: 18px;
+            line-height: 22px;
         }
         &__excerpt{
             font-size:14px;
