@@ -1063,11 +1063,6 @@
 			}
 		}
 
-		.flickity-enabled .slider__item__wrap {
-			display: flex;
-		  	min-height: 100%;
-		}
-
 		.flickity:not(.-full){
 			--bs-gutter-x: 16px;
 		}
@@ -1915,6 +1910,29 @@
 			}
 
 		}
+		&-roadmap{
+			padding: 60px 0 400px;
+			&:after {
+			    background-image: url(../img/home-roadmap-bg-mb.png);
+			    max-height: 760px;
+			    background-position: bottom left;
+			    top: auto;
+			    bottom: -27%;
+			}
+			&:before {
+			    top: auto;
+			    bottom: 13%;
+			    height: 260px;
+			    width: 200px;
+			}
+			.el__pattern:before {
+			    top: auto;
+			    bottom: -50%;
+			    width: 100px;
+			    height: 150px;
+			    left: 8%;
+			}
+		}
 		&-about{
 			.sc__header__title {
 			    min-width: 310px;
@@ -1930,6 +1948,15 @@
 				    width: 60px;
 				    height: 60px;
 				}
+			}
+		}
+	}
+
+	@media (min-width:768px){
+		&-roadmap{
+			.flickity-enabled .slider__item__wrap {
+				display: flex;
+			  	min-height: 100%;
 			}
 		}
 	}
