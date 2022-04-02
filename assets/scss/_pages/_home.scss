@@ -1615,6 +1615,7 @@
 		&-gameplay{
 			.tab-content{
 				.tab-pane{
+					padding-top: 10px;
 					overflow: auto;
 					&::-webkit-scrollbar {
 					  display: none;
