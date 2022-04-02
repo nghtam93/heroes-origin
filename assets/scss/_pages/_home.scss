@@ -339,6 +339,7 @@
 				.el__item{
 					position: relative;
 					width: 72px;
+					height: 72px;
 					cursor: pointer;
 					&::before {
 						content: '';
@@ -1613,12 +1614,15 @@
 		}
 		&-gameplay{
 			.tab-content{
-				.el__items {
+				.tab-pane{
 					overflow: auto;
+					&::-webkit-scrollbar {
+					  display: none;
+					}
+				}
+				.el__items {
 				    width: 1200px;
-				 //    &::-webkit-scrollbar {
-					//   display: none;
-					// }
+				    gap: 8px;
 				}
 			}
 		}
